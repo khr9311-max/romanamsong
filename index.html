@@ -7,9 +7,14 @@
     
     <!-- 오픈그래프 및 SEO 메타 태그 -->
     <meta name="description" content="성경의 다이아몬드 로마서 8장 39구절 전장 암송 웹 애플리케이션. 단계별 빈칸 훈련, 초성 힌트, 음성 낭독(TTS), 3단계 마스터 진도 관리.">
-    <meta property="og:title" content="로마서 8장 전장 암송 (39구절)">
+    <meta property="og:title" content="로마서 8장 성경 암송 (전장 39구절 마스터)">
     <meta property="og:description" content="성령 안에서의 생명, 하나님의 자녀, 영원한 사랑! 로마서 8장 완전 정복">
     <meta property="og:type" content="website">
+    <meta property="og:url" content="https://romanamsong.vercel.app/">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="로마서 8장 성경 암송 (전장 39구절 마스터)">
+    <meta name="twitter:description" content="성경의 다이아몬드 로마서 8장 39구절 전장 암송 웹 애플리케이션.">
+    <link rel="canonical" href="https://romanamsong.vercel.app/">
     <meta name="theme-color" content="#1e3a8a">
 
     <!-- 폰트 불러오기 (Pretendard & KoPub 바탕) -->
@@ -1376,6 +1381,7 @@
         </div>
 
         <div class="header-right">
+            <button class="icon-btn" id="btn-share-app" title="웹 주소 공유 / 복사">🔗</button>
             <button class="icon-btn" id="btn-toggle-read" title="전체 말씀 통독">📜</button>
             <button class="icon-btn" id="btn-toggle-theme" title="다크 모드 전환">🌙</button>
         </div>
@@ -1678,6 +1684,9 @@
             <!-- JS로 생성 -->
         </div>
         <div class="sidebar-links-box">
+            <button onclick="shareApp()" class="sidebar-link-btn" style="width:100%; border:none; cursor:pointer; font-family:inherit; text-align:center; justify-content:center; background:linear-gradient(135deg, #1e3a8a, #2563eb); color:#fff; font-weight:700;">
+                <span>🔗 로마서 8장 주소 공유하기</span>
+            </button>
             <a href="https://72amsong.vercel.app/" target="_blank" rel="noopener noreferrer" class="sidebar-link-btn highlight-blue">
                 <span>🌿 토비새 72구절 암송 웹 앱</span>
             </a>
@@ -2797,22 +2806,48 @@
         }
     }, { passive: true });
 
-    /* ========================================================
-       이벤트 리스너 바인딩 & 초기화
-       ======================================================== */
-    document.getElementById('btn-open-sidebar').onclick = openSidebar;
-    document.getElementById('btn-go-home').onclick = () => showScreen('home');
-    document.getElementById('btn-toggle-read').onclick = () => {
-        if (appState.currentView === 'read') showScreen('home');
-        else showScreen('read');
-    };
-    document.getElementById('btn-toggle-theme').onclick = toggleTheme;
+        /* ========================================================
+           주소 공유 및 클립보드 복사
+           ======================================================== */
+        function shareApp() {
+            const shareUrl = 'https://romanamsong.vercel.app/';
+            const shareTitle = '로마서 8장 성경 암송 (전장 39구절 마스터)';
+            const shareText = '성경의 다이아몬드 로마서 8장 39구절 전장 암송 웹 애플리케이션! 단계별 빈칸 훈련과 음성 낭독으로 마스터해보세요.';
+            
+            if (navigator.share) {
+                navigator.share({
+                    title: shareTitle,
+                    text: shareText,
+                    url: shareUrl
+                }).catch(() => {});
+            } else if (navigator.clipboard && navigator.clipboard.writeText) {
+                navigator.clipboard.writeText(shareUrl).then(() => {
+                    showToast('🔗 로마서 8장 암송 주소가 복사되었습니다!');
+                }).catch(() => {
+                    prompt('로마서 8장 암송 주소 복사 (Ctrl+C):', shareUrl);
+                });
+            } else {
+                prompt('로마서 8장 암송 주소 복사 (Ctrl+C):', shareUrl);
+            }
+        }
 
-    // 시작
-    loadSavedState();
-    updateDashboardStats();
-    showScreen('home');
-</script>
+        /* ========================================================
+           이벤트 리스너 바인딩 & 초기화
+           ======================================================== */
+        document.getElementById('btn-open-sidebar').onclick = openSidebar;
+        document.getElementById('btn-go-home').onclick = () => showScreen('home');
+        document.getElementById('btn-share-app').onclick = shareApp;
+        document.getElementById('btn-toggle-read').onclick = () => {
+            if (appState.currentView === 'read') showScreen('home');
+            else showScreen('read');
+        };
+        document.getElementById('btn-toggle-theme').onclick = toggleTheme;
+
+        // 시작
+        loadSavedState();
+        updateDashboardStats();
+        showScreen('home');
+    </script>
 
 </body>
 </html>

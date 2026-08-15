@@ -1,27 +1,27 @@
 <!DOCTYPE html>
 <html lang="ko">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>로마서 8장 성경 암송 (전장 39구절 마스터)</title>
-
+    
     <!-- 오픈그래프 및 SEO 메타 태그 -->
-    <meta name="description"
-        content="성경의 다이아몬드 로마서 8장 39구절 전장 암송 웹 애플리케이션. 단계별 빈칸 훈련, 초성 힌트, 음성 낭독(TTS), 3단계 마스터 진도 관리.">
-    <meta property="og:title" content="로마서 8장 전장 암송 (39구절)">
+    <meta name="description" content="성경의 다이아몬드 로마서 8장 39구절 전장 암송 웹 애플리케이션. 단계별 빈칸 훈련, 초성 힌트, 음성 낭독(TTS), 3단계 마스터 진도 관리.">
+    <meta property="og:title" content="로마서 8장 성경 암송 (전장 39구절 마스터)">
     <meta property="og:description" content="성령 안에서의 생명, 하나님의 자녀, 영원한 사랑! 로마서 8장 완전 정복">
     <meta property="og:type" content="website">
+    <meta property="og:url" content="https://romanamsong.vercel.app/">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="로마서 8장 성경 암송 (전장 39구절 마스터)">
+    <meta name="twitter:description" content="성경의 다이아몬드 로마서 8장 39구절 전장 암송 웹 애플리케이션.">
+    <link rel="canonical" href="https://romanamsong.vercel.app/">
     <meta name="theme-color" content="#1e3a8a">
 
     <!-- 폰트 불러오기 (Pretendard & KoPub 바탕) -->
-    <link rel="stylesheet" as="style" crossorigin
-        href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700;800&family=Noto+Serif+KR:wght@400;600;700&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700;800&family=Noto+Serif+KR:wght@400;600;700&display=swap" rel="stylesheet">
 
     <style>
         :root {
@@ -32,28 +32,28 @@
             --secondary-soft: #ecfdf5;
             --accent: #d97706;
             --accent-soft: #fffbeb;
-
+            
             --bg: #f1f5f9;
             --card-bg: #ffffff;
             --card-border: #e2e8f0;
             --text-main: #0f172a;
             --text-sub: #475569;
             --text-muted: #94a3b8;
-
+            
             --input-bg: rgba(59, 130, 246, 0.06);
             --input-border: #3b82f6;
             --input-correct-bg: #dcfce7;
             --input-correct-border: #16a34a;
             --input-correct-color: #15803d;
-
+            
             --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.05);
             --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.08), 0 2px 4px -2px rgba(0, 0, 0, 0.05);
             --shadow-lg: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.06);
-
+            
             --radius-sm: 8px;
             --radius-md: 14px;
             --radius-lg: 20px;
-
+            
             --font-sans: 'Pretendard', -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
             --font-serif: 'Nanum Myeongjo', 'Noto Serif KR', serif;
             --font-current: var(--font-sans);
@@ -69,20 +69,20 @@
             --secondary-soft: #064e3b;
             --accent: #fbbf24;
             --accent-soft: #451a03;
-
+            
             --bg: #0f172a;
             --card-bg: #1e293b;
             --card-border: #334155;
             --text-main: #f8fafc;
             --text-sub: #cbd5e1;
             --text-muted: #64748b;
-
+            
             --input-bg: rgba(96, 165, 250, 0.12);
             --input-border: #60a5fa;
             --input-correct-bg: rgba(52, 211, 153, 0.2);
             --input-correct-border: #34d399;
             --input-correct-color: #6ee7b7;
-
+            
             --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.3);
             --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.4);
             --shadow-lg: 0 10px 30px rgba(0, 0, 0, 0.6);
@@ -143,8 +143,7 @@
             transition: background-color 0.3s, border-color 0.3s;
         }
 
-        .header-left,
-        .header-right {
+        .header-left, .header-right {
             display: flex;
             align-items: center;
             gap: 2px;
@@ -216,13 +215,11 @@
             -webkit-overflow-scrolling: touch;
         }
 
-        .screen-view>* {
+        .screen-view > * {
             flex-shrink: 0;
         }
 
-        .hidden {
-            display: none !important;
-        }
+        .hidden { display: none !important; }
 
         /* ========================================================
            1. 메인 홈 대시보드 (#home-screen)
@@ -234,7 +231,7 @@
             gap: 16px;
         }
 
-        #home-screen>* {
+        #home-screen > * {
             flex-shrink: 0;
         }
 
@@ -427,14 +424,8 @@
             box-shadow: 0 4px 14px rgba(37, 99, 235, 0.3);
         }
 
-        .quick-btn-primary .quick-btn-title {
-            color: white;
-        }
-
-        .quick-btn-primary .quick-btn-desc {
-            color: rgba(255, 255, 255, 0.85);
-        }
-
+        .quick-btn-primary .quick-btn-title { color: white; }
+        .quick-btn-primary .quick-btn-desc { color: rgba(255, 255, 255, 0.85); }
         .quick-btn-primary .quick-btn-icon {
             background: rgba(255, 255, 255, 0.2);
             color: white;
@@ -1041,15 +1032,8 @@
         }
 
         @keyframes bounceIn {
-            0% {
-                opacity: 0;
-                transform: scale(0.8);
-            }
-
-            100% {
-                opacity: 1;
-                transform: scale(1);
-            }
+            0% { opacity: 0; transform: scale(0.8); }
+            100% { opacity: 1; transform: scale(1); }
         }
 
         /* 하단 컨트롤러 바 */
@@ -1114,15 +1098,8 @@
         }
 
         @keyframes pulse {
-
-            0%,
-            100% {
-                opacity: 1;
-            }
-
-            50% {
-                opacity: 0.6;
-            }
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.6; }
         }
 
         .btn-tool-peek {
@@ -1157,8 +1134,7 @@
             z-index: 10;
         }
 
-        .read-font-tools,
-        .read-tts-tools {
+        .read-font-tools, .read-tts-tools {
             display: flex;
             align-items: center;
             gap: 6px;
@@ -1389,1182 +1365,1171 @@
         }
     </style>
 </head>
-
 <body>
 
-    <div id="app-container">
-        <!-- 상단 글로벌 헤더 -->
-        <header>
-            <div class="header-left">
-                <button class="icon-btn" id="btn-open-sidebar" title="구절 목차">☰</button>
-                <button class="icon-btn" id="btn-go-home" title="홈 대시보드">🏠</button>
-            </div>
-
-            <div class="header-title-box">
-                <span class="header-title-main" id="header-main-title">로마서 8장 암송</span>
-                <span class="header-title-sub" id="header-sub-title">전장 39구절 마스터</span>
-            </div>
-
-            <div class="header-right">
-                <button class="icon-btn" id="btn-toggle-read" title="전체 말씀 통독">📜</button>
-                <button class="icon-btn" id="btn-toggle-theme" title="다크 모드 전환">🌙</button>
-            </div>
-        </header>
-
-        <!-- 세션 진행 바 (학습 화면용) -->
-        <div class="session-progress-line" id="session-progress-box" style="display:none;">
-            <div class="session-progress-fill" id="session-progress-bar"></div>
+<div id="app-container">
+    <!-- 상단 글로벌 헤더 -->
+    <header>
+        <div class="header-left">
+            <button class="icon-btn" id="btn-open-sidebar" title="구절 목차">☰</button>
+            <button class="icon-btn" id="btn-go-home" title="홈 대시보드">🏠</button>
+        </div>
+        
+        <div class="header-title-box">
+            <span class="header-title-main" id="header-main-title">로마서 8장 암송</span>
+            <span class="header-title-sub" id="header-sub-title">전장 39구절 마스터</span>
         </div>
 
-        <!-- ========================================================
-         화면 1: 메인 홈 대시보드 (#home-screen)
-         ======================================================== -->
-        <div class="screen-view" id="home-screen">
-            <!-- 메인 히어로 배너 -->
-            <div class="hero-card">
-                <div class="hero-badge">💎 성경의 다이아몬드</div>
-                <h1 class="hero-title">로마서 8장 전장 암송</h1>
-                <p class="hero-subtitle">생명의 성령의 법에서 끊을 수 없는 그리스도의 사랑까지, 39구절을 완벽하게 마스터해보세요.</p>
-            </div>
-
-            <!-- 암송 통계 대시보드 -->
-            <div class="stats-card">
-                <div class="stats-header">
-                    <span class="stats-title">📊 전체 암송 달성률</span>
-                    <span class="stats-rate-text" id="stat-overall-percent">0%</span>
-                </div>
-                <div class="progress-bar-bg">
-                    <div class="progress-bar-fill" id="stat-progress-fill" style="width: 0%;"></div>
-                </div>
-                <div class="stats-grid">
-                    <div>
-                        <div class="stat-item-num" id="stat-mastered-count" style="color: #10b981;">0</div>
-                        <div class="stat-item-label">🌟 완전 외움</div>
-                    </div>
-                    <div>
-                        <div class="stat-item-num" id="stat-review-count" style="color: #f59e0b;">0</div>
-                        <div class="stat-item-label">🤔 복습 필요</div>
-                    </div>
-                    <div>
-                        <div class="stat-item-num" id="stat-streak-count" style="color: #ef4444;">1일</div>
-                        <div class="stat-item-label">🔥 연속 학습</div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- 빠른 시작 버튼들 -->
-            <div class="quick-actions-grid">
-                <button class="quick-btn quick-btn-primary" onclick="quickStart('resume')">
-                    <div class="quick-btn-icon">🚀</div>
-                    <div>
-                        <div class="quick-btn-title">이어서 암송하기</div>
-                        <div class="quick-btn-desc" id="resume-verse-text">마지막 학습: 1절</div>
-                    </div>
-                </button>
-
-                <button class="quick-btn" onclick="quickStart('seq')">
-                    <div class="quick-btn-icon">📖</div>
-                    <div>
-                        <div class="quick-btn-title">1절부터 시작</div>
-                        <div class="quick-btn-desc">처음부터 순서대로</div>
-                    </div>
-                </button>
-
-                <button class="quick-btn" onclick="quickStart('random')">
-                    <div class="quick-btn-icon">🎲</div>
-                    <div>
-                        <div class="quick-btn-title">랜덤 훈련</div>
-                        <div class="quick-btn-desc">39구절 무작위 출제</div>
-                    </div>
-                </button>
-
-                <button class="quick-btn" onclick="quickStart('review')">
-                    <div class="quick-btn-icon">🌟</div>
-                    <div>
-                        <div class="quick-btn-title">취약 구절 복습</div>
-                        <div class="quick-btn-desc">헷갈리는 구절 집중</div>
-                    </div>
-                </button>
-
-                <button class="quick-btn" onclick="switchToReadView()">
-                    <div class="quick-btn-icon">📜</div>
-                    <div>
-                        <div class="quick-btn-title">39절 통독 묵상</div>
-                        <div class="quick-btn-desc">음성 낭독과 함께 읽기</div>
-                    </div>
-                </button>
-            </div>
-
-            <!-- 파트별 선택 -->
-            <div class="section-header-title">
-                <span>단락별 파트 선택</span>
-                <span style="font-size:0.75rem; color:var(--text-muted);">총 4개 단락</span>
-            </div>
-
-            <div class="part-card-list">
-                <div class="part-card active" data-part="ALL" onclick="selectPart(this, 'ALL')">
-                    <div class="part-card-info">
-                        <span class="part-card-badge">전체 마스터</span>
-                        <span class="part-card-title">로마서 8장 전체 (1~39절)</span>
-                        <span class="part-card-range">39개 구절 전장 암송</span>
-                    </div>
-                    <span class="part-card-stat" id="part-stat-ALL">0/39</span>
-                </div>
-
-                <div class="part-card" data-part="P1" onclick="selectPart(this, 'P1')">
-                    <div class="part-card-info">
-                        <span class="part-card-badge">Part 1 (1~11절)</span>
-                        <span class="part-card-title">성령 안에서의 생명과 해방</span>
-                        <span class="part-card-range">생명의 성령의 법 · 영의 생각</span>
-                    </div>
-                    <span class="part-card-stat" id="part-stat-P1">0/11</span>
-                </div>
-
-                <div class="part-card" data-part="P2" onclick="selectPart(this, 'P2')">
-                    <div class="part-card-info">
-                        <span class="part-card-badge">Part 2 (12~17절)</span>
-                        <span class="part-card-title">하나님의 자녀와 상속자</span>
-                        <span class="part-card-range">양자의 영 · 아빠 아버지 · 영광과 고난</span>
-                    </div>
-                    <span class="part-card-stat" id="part-stat-P2">0/6</span>
-                </div>
-
-                <div class="part-card" data-part="P3" onclick="selectPart(this, 'P3')">
-                    <div class="part-card-info">
-                        <span class="part-card-badge">Part 3 (18~30절)</span>
-                        <span class="part-card-title">장차 올 영광과 성령의 친히 간구</span>
-                        <span class="part-card-range">피조물의 탄식 · 합력하여 선을 이룸</span>
-                    </div>
-                    <span class="part-card-stat" id="part-stat-P3">0/13</span>
-                </div>
-
-                <div class="part-card" data-part="P4" onclick="selectPart(this, 'P4')">
-                    <div class="part-card-info">
-                        <span class="part-card-badge">Part 4 (31~39절)</span>
-                        <span class="part-card-title">끊을 수 없는 하나님의 영원한 사랑</span>
-                        <span class="part-card-range">넉넉히 이기느니라 · 그 어떤 피조물이라도</span>
-                    </div>
-                    <span class="part-card-stat" id="part-stat-P4">0/9</span>
-                </div>
-            </div>
-
-            <!-- 암송 설정 박스 -->
-            <div class="settings-box">
-                <div>
-                    <div class="option-group-title">암송 난이도 (빈칸 비율)</div>
-                    <div class="pill-select-group" id="difficulty-pills">
-                        <button class="pill-btn" data-diff="easy" onclick="setDifficulty('easy')">초급 20%</button>
-                        <button class="pill-btn active" data-diff="medium" onclick="setDifficulty('medium')">중급
-                            40%</button>
-                        <button class="pill-btn" data-diff="hard" onclick="setDifficulty('hard')">고급 70%</button>
-                        <button class="pill-btn" data-diff="master" onclick="setDifficulty('master')">최상급 100%</button>
-                    </div>
-                </div>
-
-                <div>
-                    <div class="option-group-title">진행 순서</div>
-                    <div class="pill-select-group" id="order-pills">
-                        <button class="pill-btn active" data-order="seq" onclick="setOrder('seq')">순서대로</button>
-                        <button class="pill-btn" data-order="random" onclick="setOrder('random')">무작위 랜덤</button>
-                    </div>
-                </div>
-
-                <button class="start-action-btn" onclick="startMemorization()">
-                    <span>⚡ 선택한 옵션으로 암송 시작</span>
-                </button>
-            </div>
-
-            <!-- 추천 말씀 도구 & 후원 섹션 -->
-            <div class="promo-section-container">
-                <!-- 1. 사랑의교회 토비새 72구절 암송 웹 앱 -->
-                <div class="promo-card promo-card-tobisae">
-                    <div class="promo-header">
-                        <div class="promo-icon promo-icon-blue">🌿</div>
-                        <div>
-                            <div class="promo-title-row">
-                                <span class="promo-title">토비새 성경암송 72구절 웹 앱</span>
-                                <span class="promo-badge promo-badge-blue">72구절 정복</span>
-                            </div>
-                            <div class="promo-desc">새로운 삶부터 온전한 인격까지, 72구절을 단계별 빈칸으로 훈련해보세요!</div>
-                        </div>
-                    </div>
-                    <a href="https://72amsong.vercel.app/" target="_blank" rel="noopener noreferrer"
-                        class="tobisae-btn">
-                        <span>🌿 토비새 72구절 암송 바로가기 ↗</span>
-                    </a>
-                </div>
-
-                <!-- 2. 카카오톡 성경구절 검색 챗봇 -->
-                <div class="promo-card promo-card-chatbot">
-                    <div class="promo-header">
-                        <div class="promo-icon promo-icon-yellow">💬</div>
-                        <div>
-                            <div class="promo-title-row">
-                                <span class="promo-title">카카오톡 성경구절 검색 챗봇</span>
-                                <span class="promo-badge promo-badge-kakao">무료 챗봇</span>
-                            </div>
-                            <div class="promo-desc">궁금한 성경 구절이나 키워드를 카카오톡으로 쉽고 빠르게 찾아보세요!</div>
-                        </div>
-                    </div>
-                    <a href="https://pf.kakao.com/_hRinX" target="_blank" rel="noopener noreferrer"
-                        class="kakaotalk-btn">
-                        <span class="kakaopay-logo-badge" style="background:#371d1e; color:#fee500;">TALK</span>
-                        <span>카카오톡 성경검색 챗봇 바로가기 💬</span>
-                    </a>
-                </div>
-
-                <!-- 3. 카카오페이 후원/응원 배너 -->
-                <div class="promo-card promo-card-donation">
-                    <div class="promo-header">
-                        <div class="promo-icon promo-icon-amber">☕</div>
-                        <div>
-                            <div class="promo-title-row">
-                                <span class="promo-title">말씀 암송 사역 응원 & 후원</span>
-                                <span class="promo-badge promo-badge-pay">pay</span>
-                            </div>
-                            <div class="promo-desc">앱이 도움이 되셨다면 따뜻한 커피 한 잔으로 응원해주세요 💛</div>
-                        </div>
-                    </div>
-                    <a href="https://qr.kakaopay.com/Ej9Bn23wT" target="_blank" rel="noopener noreferrer"
-                        class="kakaopay-btn">
-                        <span class="kakaopay-logo-badge">pay</span>
-                        <span>카카오페이로 응원 / 후원하기 💛</span>
-                    </a>
-                </div>
-            </div>
+        <div class="header-right">
+            <button class="icon-btn" id="btn-share-app" title="웹 주소 공유 / 복사">🔗</button>
+            <button class="icon-btn" id="btn-toggle-read" title="전체 말씀 통독">📜</button>
+            <button class="icon-btn" id="btn-toggle-theme" title="다크 모드 전환">🌙</button>
         </div>
+    </header>
 
-        <!-- ========================================================
-         화면 2: 암송 학습 화면 (#game-screen)
-         ======================================================== -->
-        <div class="screen-view hidden" id="game-screen">
-            <!-- 상단 구절 메타 바 -->
-            <div class="verse-top-bar">
-                <div class="verse-meta">
-                    <span class="verse-part-tag" id="verse-part-label">Part 1</span>
-                    <span class="verse-ref-title" id="verse-ref-label">로마서 8:1</span>
-                    <select class="verse-direct-select" id="verse-quick-jump-select"
-                        onchange="jumpDirectToVerse(this.value)">
-                        <!-- JS로 채움 -->
-                    </select>
-                </div>
-
-                <div class="mastery-btn-group">
-                    <button class="mastery-badge-btn" id="btn-mark-master" onclick="toggleMastery('mastered')">🌟
-                        외움</button>
-                    <button class="mastery-badge-btn" id="btn-mark-review" onclick="toggleMastery('review')">🤔
-                        복습</button>
-                </div>
-            </div>
-
-            <!-- 본문 텍스트 및 빈칸 영역 -->
-            <div class="verse-content-container" id="verse-content-container">
-                <div class="verse-section-subheading" id="verse-subheading" style="display:none;"></div>
-                <div id="verse-interactive-text"></div>
-                <div id="verse-success-box" class="verse-completed-badge hidden">
-                    <span>🎉 정답을 모두 맞추셨습니다! 말씀이 마음에 새겨졌습니다.</span>
-                </div>
-            </div>
-
-            <!-- 하단 액션 툴바 -->
-            <div class="nav-footer">
-                <button class="footer-action-btn btn-nav-step" onclick="prevVerse()" title="이전 구절">⬅️ 이전</button>
-                <button class="footer-action-btn btn-tool-hint" onclick="showChoseongHint()" title="초성 힌트 보기">💡 초성
-                    힌트</button>
-                <button class="footer-action-btn btn-tool-tts" id="btn-tts-play" onclick="toggleTtsCurrentVerse()"
-                    title="음성 듣기">🔊</button>
-                <button class="footer-action-btn btn-tool-peek" onclick="togglePeekAnswer()" title="정답 확인">👁️</button>
-                <button class="footer-action-btn btn-nav-step" onclick="nextVerse()" title="다음 구절">다음 ➡️</button>
-            </div>
-        </div>
-
-        <!-- ========================================================
-         화면 3: 로마서 8장 39절 전체 통독 뷰 (#read-screen)
-         ======================================================== -->
-        <div class="screen-view hidden" id="read-screen">
-            <div class="read-tools-bar">
-                <div class="read-font-tools">
-                    <button class="read-tool-btn" onclick="adjustFontSize(-1)" title="글자 작게">가-</button>
-                    <span id="current-font-size-label"
-                        style="font-size:0.8rem; font-weight:700; color:var(--text-sub); min-width:32px; text-align:center;">18px</span>
-                    <button class="read-tool-btn" onclick="adjustFontSize(1)" title="글자 크게">가+</button>
-                    <button class="read-tool-btn" onclick="toggleFontFamily()" id="btn-font-family">명조체</button>
-                </div>
-                <div class="read-tts-tools">
-                    <button class="read-tts-btn" id="btn-read-all-tts" onclick="toggleContinuousTts()">
-                        <span id="read-tts-icon">▶️</span> <span id="read-tts-label">전체 연속 낭독</span>
-                    </button>
-                </div>
-            </div>
-
-            <div id="read-full-content">
-                <!-- JS로 로마서 8장 39구절 렌더링 -->
-            </div>
-        </div>
-
-        <!-- ========================================================
-         화면 4: 목차 사이드바 (#toc-sidebar)
-         ======================================================== -->
-        <div class="sidebar-overlay" id="sidebar-overlay" onclick="closeSidebar()"></div>
-        <div id="toc-sidebar">
-            <div class="sidebar-header">
-                <span class="sidebar-title">📖 로마서 8장 목차 (39절)</span>
-                <button class="icon-btn" style="color:white;" onclick="closeSidebar()">✕</button>
-            </div>
-            <div class="sidebar-search-box">
-                <input type="text" class="search-input" id="toc-search-input" placeholder="절 번호 또는 단어로 검색..."
-                    oninput="filterTocList(this.value)">
-            </div>
-            <div class="toc-list-container" id="toc-items-container">
-                <!-- JS로 생성 -->
-            </div>
-            <div class="sidebar-links-box">
-                <a href="https://72amsong.vercel.app/" target="_blank" rel="noopener noreferrer"
-                    class="sidebar-link-btn highlight-blue">
-                    <span>🌿 토비새 72구절 암송 웹 앱</span>
-                </a>
-                <a href="https://pf.kakao.com/_hRinX" target="_blank" rel="noopener noreferrer"
-                    class="sidebar-link-btn highlight-yellow">
-                    <span>💬 카톡 성경구절 검색 챗봇</span>
-                </a>
-                <a href="https://qr.kakaopay.com/Ej9Bn23wT" target="_blank" rel="noopener noreferrer"
-                    class="sidebar-link-btn">
-                    <span>☕ 카카오페이 사역 후원 💛</span>
-                </a>
-            </div>
-        </div>
-
-        <!-- 파티클 캔버스 & 토스트 -->
-        <canvas id="confetti-canvas"></canvas>
-        <div id="toast">알림 메시지</div>
+    <!-- 세션 진행 바 (학습 화면용) -->
+    <div class="session-progress-line" id="session-progress-box" style="display:none;">
+        <div class="session-progress-fill" id="session-progress-bar"></div>
     </div>
 
-    <script>
-        /* ========================================================
-           로마서 8장 39구절 데이터 (개역개정 정밀 데이터셋)
-           ======================================================== */
-        const ROMANS_8_DATA = [
-            {
-                num: 1, part: "P1", partName: "Part 1. 성령 안에서의 생명과 해방",
-                theme: "결코 정죄함이 없음",
-                ref: "로마서 8:1",
-                text: "그러므로 이제 그리스도 예수 안에 있는 자에게는 결코 정죄함이 없나니"
-            },
-            {
-                num: 2, part: "P1", partName: "Part 1. 성령 안에서의 생명과 해방",
-                theme: "생명의 성령의 법",
-                ref: "로마서 8:2",
-                text: "이는 그리스도 예수 안에 있는 생명의 성령의 법이 죄와 사망의 법에서 너를 해방하였음이라"
-            },
-            {
-                num: 3, part: "P1", partName: "Part 1. 성령 안에서의 생명과 해방",
-                theme: "아들을 보내신 하나님",
-                ref: "로마서 8:3",
-                text: "율법이 육신으로 말미암아 연약하여 할 수 없는 그것을 하나님은 하시나니 곧 죄로 말미암아 자기 아들을 죄 있는 육신의 모양으로 보내어 육신에 죄를 정하사"
-            },
-            {
-                num: 4, part: "P1", partName: "Part 1. 성령 안에서의 생명과 해방",
-                theme: "율법의 요구가 이루어짐",
-                ref: "로마서 8:4",
-                text: "육신을 따르지 않고 그 영을 따라 행하는 우리에게 율법의 요구가 이루어지게 하려 하심이니라"
-            },
-            {
-                num: 5, part: "P1", partName: "Part 1. 성령 안에서의 생명과 해방",
-                theme: "육신의 일과 영의 일",
-                ref: "로마서 8:5",
-                text: "육신을 따르는 자는 육신의 일을, 영을 따르는 자는 영의 일을 생각하나니"
-            },
-            {
-                num: 6, part: "P1", partName: "Part 1. 성령 안에서의 생명과 해방",
-                theme: "생명과 평안",
-                ref: "로마서 8:6",
-                text: "육신의 생각은 사망이요 영의 생각은 생명과 평안이니라"
-            },
-            {
-                num: 7, part: "P1", partName: "Part 1. 성령 안에서의 생명과 해방",
-                theme: "하나님과 원수 됨",
-                ref: "로마서 8:7",
-                text: "육신의 생각은 하나님과 원수가 되나니 이는 하나님의 법에 굴복하지 아니할 뿐 아니라 할 수도 없음이라"
-            },
-            {
-                num: 8, part: "P1", partName: "Part 1. 성령 안에서의 생명과 해방",
-                theme: "기쁘시게 할 수 없음",
-                ref: "로마서 8:8",
-                text: "육신에 있는 자들은 하나님을 기쁘시게 할 수 없느니라"
-            },
-            {
-                num: 9, part: "P1", partName: "Part 1. 성령 안에서의 생명과 해방",
-                theme: "그리스도의 사람",
-                ref: "로마서 8:9",
-                text: "만일 너희 속에 하나님의 영이 거하시면 너희가 육신에 있지 아니하고 영에 있나니 누구든지 그리스도의 영이 없으면 그리스도의 사람이 아니라"
-            },
-            {
-                num: 10, part: "P1", partName: "Part 1. 성령 안에서의 생명과 해방",
-                theme: "의로 말미암은 생명",
-                ref: "로마서 8:10",
-                text: "또 그리스도께서 너희 안에 계시면 몸은 죄로 말미암아 죽은 것이나 영은 의로 말미암아 살아 있는 것이니라"
-            },
-            {
-                num: 11, part: "P1", partName: "Part 1. 성령 안에서의 생명과 해방",
-                theme: "죽을 몸도 살리심",
-                ref: "로마서 8:11",
-                text: "예수를 죽은 자 가운데서 살리신 이의 영이 너희 안에 거하시면 그리스도 예수를 죽은 자 가운데서 살리신 이가 너희 안에 거하시는 그의 영으로 말미암아 너희 죽을 몸도 살리시리라"
-            },
-            {
-                num: 12, part: "P2", partName: "Part 2. 하나님의 자녀와 상속자",
-                theme: "빚진 자의 삶",
-                ref: "로마서 8:12",
-                text: "그러므로 형제들아 우리가 빚진 자로되 육신에게 져서 육신대로 살 것이 아니니라"
-            },
-            {
-                num: 13, part: "P2", partName: "Part 2. 하나님의 자녀와 상속자",
-                theme: "영으로써 몸의 행실을 죽임",
-                ref: "로마서 8:13",
-                text: "너희가 육신대로 살면 반드시 죽을 것이로되 영으로써 몸의 행실을 죽이면 살리니"
-            },
-            {
-                num: 14, part: "P2", partName: "Part 2. 하나님의 자녀와 상속자",
-                theme: "하나님의 아들들",
-                ref: "로마서 8:14",
-                text: "무릇 하나님의 영으로 인도함을 받는 사람은 곧 하나님의 아들이라"
-            },
-            {
-                num: 15, part: "P2", partName: "Part 2. 하나님의 자녀와 상속자",
-                theme: "아빠 아버지라 부르짖음",
-                ref: "로마서 8:15",
-                text: "너희는 다시 무서워하는 종의 영을 받지 아니하고 양자의 영을 받았으므로 우리가 아빠 아버지라고 부르짖느니라"
-            },
-            {
-                num: 16, part: "P2", partName: "Part 2. 하나님의 자녀와 상속자",
-                theme: "성령의 친히 증언하심",
-                ref: "로마서 8:16",
-                text: "성령이 친히 우리의 영과 더불어 우리가 하나님의 자녀인 것을 증언하시나니"
-            },
-            {
-                num: 17, part: "P2", partName: "Part 2. 하나님의 자녀와 상속자",
-                theme: "그리스도와 함께 한 상속자",
-                ref: "로마서 8:17",
-                text: "자녀이면 또한 상속자 곧 하나님의 상속자요 그리스도와 함께 한 상속자니 우리가 그와 함께 영광을 받기 위하여 고난도 함께 받아야 할 것이니라"
-            },
-            {
-                num: 18, part: "P3", partName: "Part 3. 장차 올 영광과 성령의 간구",
-                theme: "비교할 수 없는 영광",
-                ref: "로마서 8:18",
-                text: "생각하건대 현재의 고난은 장차 우리에게 나타날 영광과 비교할 수 없도다"
-            },
-            {
-                num: 19, part: "P3", partName: "Part 3. 장차 올 영광과 성령의 간구",
-                theme: "피조물의 고대",
-                ref: "로마서 8:19",
-                text: "피조물이 고대하는 바는 하나님의 아들들이 나타나는 것이니"
-            },
-            {
-                num: 20, part: "P3", partName: "Part 3. 장차 올 영광과 성령의 간구",
-                theme: "굴복하게 하시는 이",
-                ref: "로마서 8:20",
-                text: "피조물이 허무한 데 굴복하는 것은 자기 뜻이 아니요 오직 굴복하게 하시는 이로 말미암음이라"
-            },
-            {
-                num: 21, part: "P3", partName: "Part 3. 장차 올 영광과 성령의 간구",
-                theme: "영광의 자유에 이름",
-                ref: "로마서 8:21",
-                text: "그 바라는 것은 피조물도 썩어짐의 종 노릇 한 데서 해방되어 하나님의 자녀들의 영광의 자유에 이르는 것이니라"
-            },
-            {
-                num: 22, part: "P3", partName: "Part 3. 장차 올 영광과 성령의 간구",
-                theme: "피조물의 함께 탄식",
-                ref: "로마서 8:22",
-                text: "피조물이 다 이제까지 함께 탄식하며 함께 고통을 겪고 있는 것을 우리가 아느니라"
-            },
-            {
-                num: 23, part: "P3", partName: "Part 3. 장차 올 영광과 성령의 간구",
-                theme: "몸의 속량을 기다림",
-                ref: "로마서 8:23",
-                text: "그뿐 아니라 또한 우리 곧 성령의 처음 익은 열매를 받은 우리까지도 속으로 탄식하여 양자 될 것 곧 우리 몸의 속량을 기다리느니라"
-            },
-            {
-                num: 24, part: "P3", partName: "Part 3. 장차 올 영광과 성령의 간구",
-                theme: "소망으로 얻은 구원",
-                ref: "로마서 8:24",
-                text: "우리가 소망으로 구원을 얻었으매 보이는 소망이 소망이 아니니 보는 것을 누가 바라리요"
-            },
-            {
-                num: 25, part: "P3", partName: "Part 3. 장차 올 영광과 성령의 간구",
-                theme: "참음으로 기다림",
-                ref: "로마서 8:25",
-                text: "만일 우리가 보지 못하는 것을 바라면 참음으로 기다릴지니라"
-            },
-            {
-                num: 26, part: "P3", partName: "Part 3. 장차 올 영광과 성령의 간구",
-                theme: "성령의 말할 수 없는 탄식과 간구",
-                ref: "로마서 8:26",
-                text: "이와 같이 성령도 우리의 연약함을 도우시나니 우리는 마땅히 기도할 바를 알지 못하나 오직 성령이 말할 수 없는 탄식으로 우리를 위하여 친히 간구하시느니라"
-            },
-            {
-                num: 27, part: "P3", partName: "Part 3. 장차 올 영광과 성령의 간구",
-                theme: "하나님의 뜻대로 간구하심",
-                ref: "로마서 8:27",
-                text: "마음을 살피시는 이가 성령의 생각을 아시나니 이는 성령이 하나님의 뜻대로 성도를 위하여 간구하심이니라"
-            },
-            {
-                num: 28, part: "P3", partName: "Part 3. 장차 올 영광과 성령의 간구",
-                theme: "모든 것이 합력하여 선을 이룸",
-                ref: "로마서 8:28",
-                text: "우리가 알거니와 하나님을 사랑하는 자 곧 그의 뜻대로 부르심을 입은 자들에게는 모든 것이 합력하여 선을 이루느니라"
-            },
-            {
-                num: 29, part: "P3", partName: "Part 3. 장차 올 영광과 성령의 간구",
-                theme: "아들의 형상을 본받게 하심",
-                ref: "로마서 8:29",
-                text: "하나님이 미리 아신 자들을 또한 그 아들의 형상을 본받게 하기 위하여 미리 정하셨으니 이는 그로 많은 형제 중에서 맏아들이 되게 하려 하심이니라"
-            },
-            {
-                num: 30, part: "P3", partName: "Part 3. 장차 올 영광과 성령의 간구",
-                theme: "부르시고 의롭다 하시고 영화롭게 하심",
-                ref: "로마서 8:30",
-                text: "또 미리 정하신 그들을 또한 부르시고 부르신 그들을 또한 의롭다 하시고 의롭다 하신 그들을 또한 영화롭게 하셨느니라"
-            },
-            {
-                num: 31, part: "P4", partName: "Part 4. 끊을 수 없는 하나님의 영원한 사랑",
-                theme: "누가 우리를 대적하리요",
-                ref: "로마서 8:31",
-                text: "그런즉 이 일에 대하여 우리가 무슨 말 하리요 만일 하나님이 우리를 위하시면 누가 우리를 대적하리요"
-            },
-            {
-                num: 32, part: "P4", partName: "Part 4. 끊을 수 없는 하나님의 영원한 사랑",
-                theme: "모든 것을 주시는 하나님",
-                ref: "로마서 8:32",
-                text: "자기 아들을 아끼지 아니하시고 우리 모든 사람을 위하여 내주신 이가 어찌 그 아들과 함께 모든 것을 우리에게 주시지 아니하겠느냐"
-            },
-            {
-                num: 33, part: "P4", partName: "Part 4. 끊을 수 없는 하나님의 영원한 사랑",
-                theme: "의롭다 하신 하나님",
-                ref: "로마서 8:33",
-                text: "누가 능히 하나님께서 택하신 자들을 고발하리요 의롭다 하신 이는 하나님이시니"
-            },
-            {
-                num: 34, part: "P4", partName: "Part 4. 끊을 수 없는 하나님의 영원한 사랑",
-                theme: "우리를 위하여 간구하시는 예수",
-                ref: "로마서 8:34",
-                text: "누가 정죄하리요 죽으실 뿐 아니라 다시 살아나신 이는 그리스도 예수시니 그는 하나님 우편에 계신 자요 우리를 위하여 간구하시는 자시니라"
-            },
-            {
-                num: 35, part: "P4", partName: "Part 4. 끊을 수 없는 하나님의 영원한 사랑",
-                theme: "누가 그리스도의 사랑에서 끊으리요",
-                ref: "로마서 8:35",
-                text: "누가 우리를 그리스도의 사랑에서 끊으리요 환난이나 곤고나 박해나 기근이나 적신이나 위험이나 칼이랴"
-            },
-            {
-                num: 36, part: "P4", partName: "Part 4. 끊을 수 없는 하나님의 영원한 사랑",
-                theme: "도살 당할 양 같이 여김을 받음",
-                ref: "로마서 8:36",
-                text: "기록된 바 우리가 종일 주를 위하여 죽임을 당하게 되며 도살 당할 양 같이 여김을 받았나이다 함과 같으니라"
-            },
-            {
-                num: 37, part: "P4", partName: "Part 4. 끊을 수 없는 하나님의 영원한 사랑",
-                theme: "우리가 넉넉히 이기느니라",
-                ref: "로마서 8:37",
-                text: "그러나 이 모든 일에 우리를 사랑하시는 이로 말미암아 우리가 넉넉히 이기느니라"
-            },
-            {
-                num: 38, part: "P4", partName: "Part 4. 끊을 수 없는 하나님의 영원한 사랑",
-                theme: "확신하노니 (사망이나 생명이나)",
-                ref: "로마서 8:38",
-                text: "내가 확신하노니 사망이나 생명이나 천사들이나 권세자들이나 현재 일이나 장래 일이나 능력이나"
-            },
-            {
-                num: 39, part: "P4", partName: "Part 4. 끊을 수 없는 하나님의 영원한 사랑",
-                theme: "끊을 수 없는 하나님의 사랑",
-                ref: "로마서 8:39",
-                text: "높음이나 깊음이나 다른 어떤 피조물이라도 우리를 우리 주 그리스도 예수 안에 있는 하나님의 사랑에서 끊을 수 없으리라"
-            }
-        ];
+    <!-- ========================================================
+         화면 1: 메인 홈 대시보드 (#home-screen)
+         ======================================================== -->
+    <div class="screen-view" id="home-screen">
+        <!-- 메인 히어로 배너 -->
+        <div class="hero-card">
+            <div class="hero-badge">💎 성경의 다이아몬드</div>
+            <h1 class="hero-title">로마서 8장 전장 암송</h1>
+            <p class="hero-subtitle">생명의 성령의 법에서 끊을 수 없는 그리스도의 사랑까지, 39구절을 완벽하게 마스터해보세요.</p>
+        </div>
 
-        /* ========================================================
-           초성 분리 알고리즘
-           ======================================================== */
-        const CHO_HANGUL = ['ㄱ', 'ㄲ', 'ㄴ', 'ㄷ', 'ㄸ', 'ㄹ', 'ㅁ', 'ㅂ', 'ㅃ', 'ㅅ', 'ㅆ', 'ㅇ', 'ㅈ', 'ㅉ', 'ㅊ', 'ㅋ', 'ㅌ', 'ㅍ', 'ㅎ'];
-        function getChoseong(str) {
-            let res = "";
-            for (let i = 0; i < str.length; i++) {
-                const code = str.charCodeAt(i) - 44032;
-                if (code >= 0 && code <= 11171) {
-                    res += CHO_HANGUL[Math.floor(code / 588)];
-                } else {
-                    res += str.charAt(i);
-                }
-            }
-            return res;
+        <!-- 암송 통계 대시보드 -->
+        <div class="stats-card">
+            <div class="stats-header">
+                <span class="stats-title">📊 전체 암송 달성률</span>
+                <span class="stats-rate-text" id="stat-overall-percent">0%</span>
+            </div>
+            <div class="progress-bar-bg">
+                <div class="progress-bar-fill" id="stat-progress-fill" style="width: 0%;"></div>
+            </div>
+            <div class="stats-grid">
+                <div>
+                    <div class="stat-item-num" id="stat-mastered-count" style="color: #10b981;">0</div>
+                    <div class="stat-item-label">🌟 완전 외움</div>
+                </div>
+                <div>
+                    <div class="stat-item-num" id="stat-review-count" style="color: #f59e0b;">0</div>
+                    <div class="stat-item-label">🤔 복습 필요</div>
+                </div>
+                <div>
+                    <div class="stat-item-num" id="stat-streak-count" style="color: #ef4444;">1일</div>
+                    <div class="stat-item-label">🔥 연속 학습</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 빠른 시작 버튼들 -->
+        <div class="quick-actions-grid">
+            <button class="quick-btn quick-btn-primary" onclick="quickStart('resume')">
+                <div class="quick-btn-icon">🚀</div>
+                <div>
+                    <div class="quick-btn-title">이어서 암송하기</div>
+                    <div class="quick-btn-desc" id="resume-verse-text">마지막 학습: 1절</div>
+                </div>
+            </button>
+
+            <button class="quick-btn" onclick="quickStart('seq')">
+                <div class="quick-btn-icon">📖</div>
+                <div>
+                    <div class="quick-btn-title">1절부터 시작</div>
+                    <div class="quick-btn-desc">처음부터 순서대로</div>
+                </div>
+            </button>
+
+            <button class="quick-btn" onclick="quickStart('random')">
+                <div class="quick-btn-icon">🎲</div>
+                <div>
+                    <div class="quick-btn-title">랜덤 훈련</div>
+                    <div class="quick-btn-desc">39구절 무작위 출제</div>
+                </div>
+            </button>
+
+            <button class="quick-btn" onclick="quickStart('review')">
+                <div class="quick-btn-icon">🌟</div>
+                <div>
+                    <div class="quick-btn-title">취약 구절 복습</div>
+                    <div class="quick-btn-desc">헷갈리는 구절 집중</div>
+                </div>
+            </button>
+
+            <button class="quick-btn" onclick="switchToReadView()">
+                <div class="quick-btn-icon">📜</div>
+                <div>
+                    <div class="quick-btn-title">39절 통독 묵상</div>
+                    <div class="quick-btn-desc">음성 낭독과 함께 읽기</div>
+                </div>
+            </button>
+        </div>
+
+        <!-- 파트별 선택 -->
+        <div class="section-header-title">
+            <span>단락별 파트 선택</span>
+            <span style="font-size:0.75rem; color:var(--text-muted);">총 4개 단락</span>
+        </div>
+
+        <div class="part-card-list">
+            <div class="part-card active" data-part="ALL" onclick="selectPart(this, 'ALL')">
+                <div class="part-card-info">
+                    <span class="part-card-badge">전체 마스터</span>
+                    <span class="part-card-title">로마서 8장 전체 (1~39절)</span>
+                    <span class="part-card-range">39개 구절 전장 암송</span>
+                </div>
+                <span class="part-card-stat" id="part-stat-ALL">0/39</span>
+            </div>
+
+            <div class="part-card" data-part="P1" onclick="selectPart(this, 'P1')">
+                <div class="part-card-info">
+                    <span class="part-card-badge">Part 1 (1~11절)</span>
+                    <span class="part-card-title">성령 안에서의 생명과 해방</span>
+                    <span class="part-card-range">생명의 성령의 법 · 영의 생각</span>
+                </div>
+                <span class="part-card-stat" id="part-stat-P1">0/11</span>
+            </div>
+
+            <div class="part-card" data-part="P2" onclick="selectPart(this, 'P2')">
+                <div class="part-card-info">
+                    <span class="part-card-badge">Part 2 (12~17절)</span>
+                    <span class="part-card-title">하나님의 자녀와 상속자</span>
+                    <span class="part-card-range">양자의 영 · 아빠 아버지 · 영광과 고난</span>
+                </div>
+                <span class="part-card-stat" id="part-stat-P2">0/6</span>
+            </div>
+
+            <div class="part-card" data-part="P3" onclick="selectPart(this, 'P3')">
+                <div class="part-card-info">
+                    <span class="part-card-badge">Part 3 (18~30절)</span>
+                    <span class="part-card-title">장차 올 영광과 성령의 친히 간구</span>
+                    <span class="part-card-range">피조물의 탄식 · 합력하여 선을 이룸</span>
+                </div>
+                <span class="part-card-stat" id="part-stat-P3">0/13</span>
+            </div>
+
+            <div class="part-card" data-part="P4" onclick="selectPart(this, 'P4')">
+                <div class="part-card-info">
+                    <span class="part-card-badge">Part 4 (31~39절)</span>
+                    <span class="part-card-title">끊을 수 없는 하나님의 영원한 사랑</span>
+                    <span class="part-card-range">넉넉히 이기느니라 · 그 어떤 피조물이라도</span>
+                </div>
+                <span class="part-card-stat" id="part-stat-P4">0/9</span>
+            </div>
+        </div>
+
+        <!-- 암송 설정 박스 -->
+        <div class="settings-box">
+            <div>
+                <div class="option-group-title">암송 난이도 (빈칸 비율)</div>
+                <div class="pill-select-group" id="difficulty-pills">
+                    <button class="pill-btn" data-diff="easy" onclick="setDifficulty('easy')">초급 20%</button>
+                    <button class="pill-btn active" data-diff="medium" onclick="setDifficulty('medium')">중급 40%</button>
+                    <button class="pill-btn" data-diff="hard" onclick="setDifficulty('hard')">고급 70%</button>
+                    <button class="pill-btn" data-diff="master" onclick="setDifficulty('master')">최상급 100%</button>
+                </div>
+            </div>
+
+            <div>
+                <div class="option-group-title">진행 순서</div>
+                <div class="pill-select-group" id="order-pills">
+                    <button class="pill-btn active" data-order="seq" onclick="setOrder('seq')">순서대로</button>
+                    <button class="pill-btn" data-order="random" onclick="setOrder('random')">무작위 랜덤</button>
+                </div>
+            </div>
+
+            <button class="start-action-btn" onclick="startMemorization()">
+                <span>⚡ 선택한 옵션으로 암송 시작</span>
+            </button>
+        </div>
+
+        <!-- 추천 말씀 도구 & 후원 섹션 -->
+        <div class="promo-section-container">
+            <!-- 1. 사랑의교회 토비새 72구절 암송 웹 앱 -->
+            <div class="promo-card promo-card-tobisae">
+                <div class="promo-header">
+                    <div class="promo-icon promo-icon-blue">🌿</div>
+                    <div>
+                        <div class="promo-title-row">
+                            <span class="promo-title">토비새 성경암송 72구절 웹 앱</span>
+                            <span class="promo-badge promo-badge-blue">72구절 정복</span>
+                        </div>
+                        <div class="promo-desc">새로운 삶부터 온전한 인격까지, 72구절을 단계별 빈칸으로 훈련해보세요!</div>
+                    </div>
+                </div>
+                <a href="https://72amsong.vercel.app/" target="_blank" rel="noopener noreferrer" class="tobisae-btn">
+                    <span>🌿 토비새 72구절 암송 바로가기 ↗</span>
+                </a>
+            </div>
+
+            <!-- 2. 카카오톡 성경구절 검색 챗봇 -->
+            <div class="promo-card promo-card-chatbot">
+                <div class="promo-header">
+                    <div class="promo-icon promo-icon-yellow">💬</div>
+                    <div>
+                        <div class="promo-title-row">
+                            <span class="promo-title">카카오톡 성경구절 검색 챗봇</span>
+                            <span class="promo-badge promo-badge-kakao">무료 챗봇</span>
+                        </div>
+                        <div class="promo-desc">궁금한 성경 구절이나 키워드를 카카오톡으로 쉽고 빠르게 찾아보세요!</div>
+                    </div>
+                </div>
+                <a href="https://pf.kakao.com/_hRinX" target="_blank" rel="noopener noreferrer" class="kakaotalk-btn">
+                    <span class="kakaopay-logo-badge" style="background:#371d1e; color:#fee500;">TALK</span>
+                    <span>카카오톡 성경검색 챗봇 바로가기 💬</span>
+                </a>
+            </div>
+
+            <!-- 3. 카카오페이 후원/응원 배너 -->
+            <div class="promo-card promo-card-donation">
+                <div class="promo-header">
+                    <div class="promo-icon promo-icon-amber">☕</div>
+                    <div>
+                        <div class="promo-title-row">
+                            <span class="promo-title">말씀 암송 사역 응원 & 후원</span>
+                            <span class="promo-badge promo-badge-pay">pay</span>
+                        </div>
+                        <div class="promo-desc">앱이 도움이 되셨다면 따뜻한 커피 한 잔으로 응원해주세요 💛</div>
+                    </div>
+                </div>
+                <a href="https://qr.kakaopay.com/Ej9Bn23wT" target="_blank" rel="noopener noreferrer" class="kakaopay-btn">
+                    <span class="kakaopay-logo-badge">pay</span>
+                    <span>카카오페이로 응원 / 후원하기 💛</span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- ========================================================
+         화면 2: 암송 학습 화면 (#game-screen)
+         ======================================================== -->
+    <div class="screen-view hidden" id="game-screen">
+        <!-- 상단 구절 메타 바 -->
+        <div class="verse-top-bar">
+            <div class="verse-meta">
+                <span class="verse-part-tag" id="verse-part-label">Part 1</span>
+                <span class="verse-ref-title" id="verse-ref-label">로마서 8:1</span>
+                <select class="verse-direct-select" id="verse-quick-jump-select" onchange="jumpDirectToVerse(this.value)">
+                    <!-- JS로 채움 -->
+                </select>
+            </div>
+            
+            <div class="mastery-btn-group">
+                <button class="mastery-badge-btn" id="btn-mark-master" onclick="toggleMastery('mastered')">🌟 외움</button>
+                <button class="mastery-badge-btn" id="btn-mark-review" onclick="toggleMastery('review')">🤔 복습</button>
+            </div>
+        </div>
+
+        <!-- 본문 텍스트 및 빈칸 영역 -->
+        <div class="verse-content-container" id="verse-content-container">
+            <div class="verse-section-subheading" id="verse-subheading" style="display:none;"></div>
+            <div id="verse-interactive-text"></div>
+            <div id="verse-success-box" class="verse-completed-badge hidden">
+                <span>🎉 정답을 모두 맞추셨습니다! 말씀이 마음에 새겨졌습니다.</span>
+            </div>
+        </div>
+
+        <!-- 하단 액션 툴바 -->
+        <div class="nav-footer">
+            <button class="footer-action-btn btn-nav-step" onclick="prevVerse()" title="이전 구절">⬅️ 이전</button>
+            <button class="footer-action-btn btn-tool-hint" onclick="showChoseongHint()" title="초성 힌트 보기">💡 초성 힌트</button>
+            <button class="footer-action-btn btn-tool-tts" id="btn-tts-play" onclick="toggleTtsCurrentVerse()" title="음성 듣기">🔊</button>
+            <button class="footer-action-btn btn-tool-peek" onclick="togglePeekAnswer()" title="정답 확인">👁️</button>
+            <button class="footer-action-btn btn-nav-step" onclick="nextVerse()" title="다음 구절">다음 ➡️</button>
+        </div>
+    </div>
+
+    <!-- ========================================================
+         화면 3: 로마서 8장 39절 전체 통독 뷰 (#read-screen)
+         ======================================================== -->
+    <div class="screen-view hidden" id="read-screen">
+        <div class="read-tools-bar">
+            <div class="read-font-tools">
+                <button class="read-tool-btn" onclick="adjustFontSize(-1)" title="글자 작게">가-</button>
+                <span id="current-font-size-label" style="font-size:0.8rem; font-weight:700; color:var(--text-sub); min-width:32px; text-align:center;">18px</span>
+                <button class="read-tool-btn" onclick="adjustFontSize(1)" title="글자 크게">가+</button>
+                <button class="read-tool-btn" onclick="toggleFontFamily()" id="btn-font-family">명조체</button>
+            </div>
+            <div class="read-tts-tools">
+                <button class="read-tts-btn" id="btn-read-all-tts" onclick="toggleContinuousTts()">
+                    <span id="read-tts-icon">▶️</span> <span id="read-tts-label">전체 연속 낭독</span>
+                </button>
+            </div>
+        </div>
+
+        <div id="read-full-content">
+            <!-- JS로 로마서 8장 39구절 렌더링 -->
+        </div>
+    </div>
+
+    <!-- ========================================================
+         화면 4: 목차 사이드바 (#toc-sidebar)
+         ======================================================== -->
+    <div class="sidebar-overlay" id="sidebar-overlay" onclick="closeSidebar()"></div>
+    <div id="toc-sidebar">
+        <div class="sidebar-header">
+            <span class="sidebar-title">📖 로마서 8장 목차 (39절)</span>
+            <button class="icon-btn" style="color:white;" onclick="closeSidebar()">✕</button>
+        </div>
+        <div class="sidebar-search-box">
+            <input type="text" class="search-input" id="toc-search-input" placeholder="절 번호 또는 단어로 검색..." oninput="filterTocList(this.value)">
+        </div>
+        <div class="toc-list-container" id="toc-items-container">
+            <!-- JS로 생성 -->
+        </div>
+        <div class="sidebar-links-box">
+            <button onclick="shareApp()" class="sidebar-link-btn" style="width:100%; border:none; cursor:pointer; font-family:inherit; text-align:center; justify-content:center; background:linear-gradient(135deg, #1e3a8a, #2563eb); color:#fff; font-weight:700;">
+                <span>🔗 로마서 8장 주소 공유하기</span>
+            </button>
+            <a href="https://72amsong.vercel.app/" target="_blank" rel="noopener noreferrer" class="sidebar-link-btn highlight-blue">
+                <span>🌿 토비새 72구절 암송 웹 앱</span>
+            </a>
+            <a href="https://pf.kakao.com/_hRinX" target="_blank" rel="noopener noreferrer" class="sidebar-link-btn highlight-yellow">
+                <span>💬 카톡 성경구절 검색 챗봇</span>
+            </a>
+            <a href="https://qr.kakaopay.com/Ej9Bn23wT" target="_blank" rel="noopener noreferrer" class="sidebar-link-btn">
+                <span>☕ 카카오페이 사역 후원 💛</span>
+            </a>
+        </div>
+    </div>
+
+    <!-- 파티클 캔버스 & 토스트 -->
+    <canvas id="confetti-canvas"></canvas>
+    <div id="toast">알림 메시지</div>
+</div>
+
+<script>
+    /* ========================================================
+       로마서 8장 39구절 데이터 (개역개정 정밀 데이터셋)
+       ======================================================== */
+    const ROMANS_8_DATA = [
+        {
+            num: 1, part: "P1", partName: "Part 1. 성령 안에서의 생명과 해방",
+            theme: "결코 정죄함이 없음",
+            ref: "로마서 8:1",
+            text: "그러므로 이제 그리스도 예수 안에 있는 자에게는 결코 정죄함이 없나니"
+        },
+        {
+            num: 2, part: "P1", partName: "Part 1. 성령 안에서의 생명과 해방",
+            theme: "생명의 성령의 법",
+            ref: "로마서 8:2",
+            text: "이는 그리스도 예수 안에 있는 생명의 성령의 법이 죄와 사망의 법에서 너를 해방하였음이라"
+        },
+        {
+            num: 3, part: "P1", partName: "Part 1. 성령 안에서의 생명과 해방",
+            theme: "아들을 보내신 하나님",
+            ref: "로마서 8:3",
+            text: "율법이 육신으로 말미암아 연약하여 할 수 없는 그것을 하나님은 하시나니 곧 죄로 말미암아 자기 아들을 죄 있는 육신의 모양으로 보내어 육신에 죄를 정하사"
+        },
+        {
+            num: 4, part: "P1", partName: "Part 1. 성령 안에서의 생명과 해방",
+            theme: "율법의 요구가 이루어짐",
+            ref: "로마서 8:4",
+            text: "육신을 따르지 않고 그 영을 따라 행하는 우리에게 율법의 요구가 이루어지게 하려 하심이니라"
+        },
+        {
+            num: 5, part: "P1", partName: "Part 1. 성령 안에서의 생명과 해방",
+            theme: "육신의 일과 영의 일",
+            ref: "로마서 8:5",
+            text: "육신을 따르는 자는 육신의 일을, 영을 따르는 자는 영의 일을 생각하나니"
+        },
+        {
+            num: 6, part: "P1", partName: "Part 1. 성령 안에서의 생명과 해방",
+            theme: "생명과 평안",
+            ref: "로마서 8:6",
+            text: "육신의 생각은 사망이요 영의 생각은 생명과 평안이니라"
+        },
+        {
+            num: 7, part: "P1", partName: "Part 1. 성령 안에서의 생명과 해방",
+            theme: "하나님과 원수 됨",
+            ref: "로마서 8:7",
+            text: "육신의 생각은 하나님과 원수가 되나니 이는 하나님의 법에 굴복하지 아니할 뿐 아니라 할 수도 없음이라"
+        },
+        {
+            num: 8, part: "P1", partName: "Part 1. 성령 안에서의 생명과 해방",
+            theme: "기쁘시게 할 수 없음",
+            ref: "로마서 8:8",
+            text: "육신에 있는 자들은 하나님을 기쁘시게 할 수 없느니라"
+        },
+        {
+            num: 9, part: "P1", partName: "Part 1. 성령 안에서의 생명과 해방",
+            theme: "그리스도의 사람",
+            ref: "로마서 8:9",
+            text: "만일 너희 속에 하나님의 영이 거하시면 너희가 육신에 있지 아니하고 영에 있나니 누구든지 그리스도의 영이 없으면 그리스도의 사람이 아니라"
+        },
+        {
+            num: 10, part: "P1", partName: "Part 1. 성령 안에서의 생명과 해방",
+            theme: "의로 말미암은 생명",
+            ref: "로마서 8:10",
+            text: "또 그리스도께서 너희 안에 계시면 몸은 죄로 말미암아 죽은 것이나 영은 의로 말미암아 살아 있는 것이니라"
+        },
+        {
+            num: 11, part: "P1", partName: "Part 1. 성령 안에서의 생명과 해방",
+            theme: "죽을 몸도 살리심",
+            ref: "로마서 8:11",
+            text: "예수를 죽은 자 가운데서 살리신 이의 영이 너희 안에 거하시면 그리스도 예수를 죽은 자 가운데서 살리신 이가 너희 안에 거하시는 그의 영으로 말미암아 너희 죽을 몸도 살리시리라"
+        },
+        {
+            num: 12, part: "P2", partName: "Part 2. 하나님의 자녀와 상속자",
+            theme: "빚진 자의 삶",
+            ref: "로마서 8:12",
+            text: "그러므로 형제들아 우리가 빚진 자로되 육신에게 져서 육신대로 살 것이 아니니라"
+        },
+        {
+            num: 13, part: "P2", partName: "Part 2. 하나님의 자녀와 상속자",
+            theme: "영으로써 몸의 행실을 죽임",
+            ref: "로마서 8:13",
+            text: "너희가 육신대로 살면 반드시 죽을 것이로되 영으로써 몸의 행실을 죽이면 살리니"
+        },
+        {
+            num: 14, part: "P2", partName: "Part 2. 하나님의 자녀와 상속자",
+            theme: "하나님의 아들들",
+            ref: "로마서 8:14",
+            text: "무릇 하나님의 영으로 인도함을 받는 사람은 곧 하나님의 아들이라"
+        },
+        {
+            num: 15, part: "P2", partName: "Part 2. 하나님의 자녀와 상속자",
+            theme: "아빠 아버지라 부르짖음",
+            ref: "로마서 8:15",
+            text: "너희는 다시 무서워하는 종의 영을 받지 아니하고 양자의 영을 받았으므로 우리가 아빠 아버지라고 부르짖느니라"
+        },
+        {
+            num: 16, part: "P2", partName: "Part 2. 하나님의 자녀와 상속자",
+            theme: "성령의 친히 증언하심",
+            ref: "로마서 8:16",
+            text: "성령이 친히 우리의 영과 더불어 우리가 하나님의 자녀인 것을 증언하시나니"
+        },
+        {
+            num: 17, part: "P2", partName: "Part 2. 하나님의 자녀와 상속자",
+            theme: "그리스도와 함께 한 상속자",
+            ref: "로마서 8:17",
+            text: "자녀이면 또한 상속자 곧 하나님의 상속자요 그리스도와 함께 한 상속자니 우리가 그와 함께 영광을 받기 위하여 고난도 함께 받아야 할 것이니라"
+        },
+        {
+            num: 18, part: "P3", partName: "Part 3. 장차 올 영광과 성령의 간구",
+            theme: "비교할 수 없는 영광",
+            ref: "로마서 8:18",
+            text: "생각하건대 현재의 고난은 장차 우리에게 나타날 영광과 비교할 수 없도다"
+        },
+        {
+            num: 19, part: "P3", partName: "Part 3. 장차 올 영광과 성령의 간구",
+            theme: "피조물의 고대",
+            ref: "로마서 8:19",
+            text: "피조물이 고대하는 바는 하나님의 아들들이 나타나는 것이니"
+        },
+        {
+            num: 20, part: "P3", partName: "Part 3. 장차 올 영광과 성령의 간구",
+            theme: "굴복하게 하시는 이",
+            ref: "로마서 8:20",
+            text: "피조물이 허무한 데 굴복하는 것은 자기 뜻이 아니요 오직 굴복하게 하시는 이로 말미암음이라"
+        },
+        {
+            num: 21, part: "P3", partName: "Part 3. 장차 올 영광과 성령의 간구",
+            theme: "영광의 자유에 이름",
+            ref: "로마서 8:21",
+            text: "그 바라는 것은 피조물도 썩어짐의 종 노릇 한 데서 해방되어 하나님의 자녀들의 영광의 자유에 이르는 것이니라"
+        },
+        {
+            num: 22, part: "P3", partName: "Part 3. 장차 올 영광과 성령의 간구",
+            theme: "피조물의 함께 탄식",
+            ref: "로마서 8:22",
+            text: "피조물이 다 이제까지 함께 탄식하며 함께 고통을 겪고 있는 것을 우리가 아느니라"
+        },
+        {
+            num: 23, part: "P3", partName: "Part 3. 장차 올 영광과 성령의 간구",
+            theme: "몸의 속량을 기다림",
+            ref: "로마서 8:23",
+            text: "그뿐 아니라 또한 우리 곧 성령의 처음 익은 열매를 받은 우리까지도 속으로 탄식하여 양자 될 것 곧 우리 몸의 속량을 기다리느니라"
+        },
+        {
+            num: 24, part: "P3", partName: "Part 3. 장차 올 영광과 성령의 간구",
+            theme: "소망으로 얻은 구원",
+            ref: "로마서 8:24",
+            text: "우리가 소망으로 구원을 얻었으매 보이는 소망이 소망이 아니니 보는 것을 누가 바라리요"
+        },
+        {
+            num: 25, part: "P3", partName: "Part 3. 장차 올 영광과 성령의 간구",
+            theme: "참음으로 기다림",
+            ref: "로마서 8:25",
+            text: "만일 우리가 보지 못하는 것을 바라면 참음으로 기다릴지니라"
+        },
+        {
+            num: 26, part: "P3", partName: "Part 3. 장차 올 영광과 성령의 간구",
+            theme: "성령의 말할 수 없는 탄식과 간구",
+            ref: "로마서 8:26",
+            text: "이와 같이 성령도 우리의 연약함을 도우시나니 우리는 마땅히 기도할 바를 알지 못하나 오직 성령이 말할 수 없는 탄식으로 우리를 위하여 친히 간구하시느니라"
+        },
+        {
+            num: 27, part: "P3", partName: "Part 3. 장차 올 영광과 성령의 간구",
+            theme: "하나님의 뜻대로 간구하심",
+            ref: "로마서 8:27",
+            text: "마음을 살피시는 이가 성령의 생각을 아시나니 이는 성령이 하나님의 뜻대로 성도를 위하여 간구하심이니라"
+        },
+        {
+            num: 28, part: "P3", partName: "Part 3. 장차 올 영광과 성령의 간구",
+            theme: "모든 것이 합력하여 선을 이룸",
+            ref: "로마서 8:28",
+            text: "우리가 알거니와 하나님을 사랑하는 자 곧 그의 뜻대로 부르심을 입은 자들에게는 모든 것이 합력하여 선을 이루느니라"
+        },
+        {
+            num: 29, part: "P3", partName: "Part 3. 장차 올 영광과 성령의 간구",
+            theme: "아들의 형상을 본받게 하심",
+            ref: "로마서 8:29",
+            text: "하나님이 미리 아신 자들을 또한 그 아들의 형상을 본받게 하기 위하여 미리 정하셨으니 이는 그로 많은 형제 중에서 맏아들이 되게 하려 하심이니라"
+        },
+        {
+            num: 30, part: "P3", partName: "Part 3. 장차 올 영광과 성령의 간구",
+            theme: "부르시고 의롭다 하시고 영화롭게 하심",
+            ref: "로마서 8:30",
+            text: "또 미리 정하신 그들을 또한 부르시고 부르신 그들을 또한 의롭다 하시고 의롭다 하신 그들을 또한 영화롭게 하셨느니라"
+        },
+        {
+            num: 31, part: "P4", partName: "Part 4. 끊을 수 없는 하나님의 영원한 사랑",
+            theme: "누가 우리를 대적하리요",
+            ref: "로마서 8:31",
+            text: "그런즉 이 일에 대하여 우리가 무슨 말 하리요 만일 하나님이 우리를 위하시면 누가 우리를 대적하리요"
+        },
+        {
+            num: 32, part: "P4", partName: "Part 4. 끊을 수 없는 하나님의 영원한 사랑",
+            theme: "모든 것을 주시는 하나님",
+            ref: "로마서 8:32",
+            text: "자기 아들을 아끼지 아니하시고 우리 모든 사람을 위하여 내주신 이가 어찌 그 아들과 함께 모든 것을 우리에게 주시지 아니하겠느냐"
+        },
+        {
+            num: 33, part: "P4", partName: "Part 4. 끊을 수 없는 하나님의 영원한 사랑",
+            theme: "의롭다 하신 하나님",
+            ref: "로마서 8:33",
+            text: "누가 능히 하나님께서 택하신 자들을 고발하리요 의롭다 하신 이는 하나님이시니"
+        },
+        {
+            num: 34, part: "P4", partName: "Part 4. 끊을 수 없는 하나님의 영원한 사랑",
+            theme: "우리를 위하여 간구하시는 예수",
+            ref: "로마서 8:34",
+            text: "누가 정죄하리요 죽으실 뿐 아니라 다시 살아나신 이는 그리스도 예수시니 그는 하나님 우편에 계신 자요 우리를 위하여 간구하시는 자시니라"
+        },
+        {
+            num: 35, part: "P4", partName: "Part 4. 끊을 수 없는 하나님의 영원한 사랑",
+            theme: "누가 그리스도의 사랑에서 끊으리요",
+            ref: "로마서 8:35",
+            text: "누가 우리를 그리스도의 사랑에서 끊으리요 환난이나 곤고나 박해나 기근이나 적신이나 위험이나 칼이랴"
+        },
+        {
+            num: 36, part: "P4", partName: "Part 4. 끊을 수 없는 하나님의 영원한 사랑",
+            theme: "도살 당할 양 같이 여김을 받음",
+            ref: "로마서 8:36",
+            text: "기록된 바 우리가 종일 주를 위하여 죽임을 당하게 되며 도살 당할 양 같이 여김을 받았나이다 함과 같으니라"
+        },
+        {
+            num: 37, part: "P4", partName: "Part 4. 끊을 수 없는 하나님의 영원한 사랑",
+            theme: "우리가 넉넉히 이기느니라",
+            ref: "로마서 8:37",
+            text: "그러나 이 모든 일에 우리를 사랑하시는 이로 말미암아 우리가 넉넉히 이기느니라"
+        },
+        {
+            num: 38, part: "P4", partName: "Part 4. 끊을 수 없는 하나님의 영원한 사랑",
+            theme: "확신하노니 (사망이나 생명이나)",
+            ref: "로마서 8:38",
+            text: "내가 확신하노니 사망이나 생명이나 천사들이나 권세자들이나 현재 일이나 장래 일이나 능력이나"
+        },
+        {
+            num: 39, part: "P4", partName: "Part 4. 끊을 수 없는 하나님의 영원한 사랑",
+            theme: "끊을 수 없는 하나님의 사랑",
+            ref: "로마서 8:39",
+            text: "높음이나 깊음이나 다른 어떤 피조물이라도 우리를 우리 주 그리스도 예수 안에 있는 하나님의 사랑에서 끊을 수 없으리라"
         }
+    ];
 
-        /* ========================================================
-           상태 관리 (State & LocalStorage)
-           ======================================================== */
-        const STORAGE_KEYS = {
-            MASTER: 'romans8_master_status_v1',
-            LAST_INDEX: 'romans8_last_verse_index',
-            THEME: 'romans8_theme_pref',
-            FONT_SIZE: 'romans8_font_size_px',
-            FONT_FAMILY: 'romans8_font_family_pref',
-            STREAK: 'romans8_streak_data'
-        };
-
-        let appState = {
-            currentView: 'home', // 'home' | 'game' | 'read'
-            selectedPart: 'ALL', // 'ALL' | 'P1' | 'P2' | 'P3' | 'P4'
-            difficulty: 'medium', // 'easy'(0.2), 'medium'(0.4), 'hard'(0.7), 'master'(1.0)
-            order: 'seq', // 'seq' | 'random'
-
-            studyQueue: [],
-            currentIndex: 0,
-
-            masteryMap: {}, // { 1: 'mastered', 2: 'review' }
-            isPeeking: false,
-
-            ttsUtterance: null,
-            isReadingAllTts: false,
-            readAllTtsIndex: 0,
-
-            fontSize: 18,
-            isSerif: false
-        };
-
-        // 로컬 스토리지 로드
-        function loadSavedState() {
-            try {
-                const savedMastery = localStorage.getItem(STORAGE_KEYS.MASTER);
-                if (savedMastery) appState.masteryMap = JSON.parse(savedMastery);
-
-                const savedTheme = localStorage.getItem(STORAGE_KEYS.THEME) || 'light';
-                document.documentElement.setAttribute('data-theme', savedTheme);
-                updateThemeButtonIcon(savedTheme);
-
-                const savedFontSize = localStorage.getItem(STORAGE_KEYS.FONT_SIZE);
-                if (savedFontSize) {
-                    appState.fontSize = parseInt(savedFontSize);
-                } else {
-                    appState.fontSize = 18;
-                }
-                applyFontSize();
-
-                const savedFontFamily = localStorage.getItem(STORAGE_KEYS.FONT_FAMILY);
-                if (savedFontFamily === 'serif') {
-                    appState.isSerif = true;
-                    document.documentElement.style.setProperty('--font-current', 'var(--font-serif)');
-                    document.getElementById('btn-font-family').textContent = '고딕체';
-                }
-
-                checkAndRecordStreak();
-            } catch (e) {
-                console.error("Storage loading error:", e);
+    /* ========================================================
+       초성 분리 알고리즘
+       ======================================================== */
+    const CHO_HANGUL = ['ㄱ','ㄲ','ㄴ','ㄷ','ㄸ','ㄹ','ㅁ','ㅂ','ㅃ','ㅅ','ㅆ','ㅇ','ㅈ','ㅉ','ㅊ','ㅋ','ㅌ','ㅍ','ㅎ'];
+    function getChoseong(str) {
+        let res = "";
+        for(let i = 0; i < str.length; i++) {
+            const code = str.charCodeAt(i) - 44032;
+            if(code >= 0 && code <= 11171) {
+                res += CHO_HANGUL[Math.floor(code / 588)];
+            } else {
+                res += str.charAt(i);
             }
         }
+        return res;
+    }
 
-        function saveMastery() {
-            localStorage.setItem(STORAGE_KEYS.MASTER, JSON.stringify(appState.masteryMap));
+    /* ========================================================
+       상태 관리 (State & LocalStorage)
+       ======================================================== */
+    const STORAGE_KEYS = {
+        MASTER: 'romans8_master_status_v1',
+        LAST_INDEX: 'romans8_last_verse_index',
+        THEME: 'romans8_theme_pref',
+        FONT_SIZE: 'romans8_font_size_px',
+        FONT_FAMILY: 'romans8_font_family_pref',
+        STREAK: 'romans8_streak_data'
+    };
+
+    let appState = {
+        currentView: 'home', // 'home' | 'game' | 'read'
+        selectedPart: 'ALL', // 'ALL' | 'P1' | 'P2' | 'P3' | 'P4'
+        difficulty: 'medium', // 'easy'(0.2), 'medium'(0.4), 'hard'(0.7), 'master'(1.0)
+        order: 'seq', // 'seq' | 'random'
+        
+        studyQueue: [],
+        currentIndex: 0,
+        
+        masteryMap: {}, // { 1: 'mastered', 2: 'review' }
+        isPeeking: false,
+        
+        ttsUtterance: null,
+        isReadingAllTts: false,
+        readAllTtsIndex: 0,
+        
+        fontSize: 18,
+        isSerif: false
+    };
+
+    // 로컬 스토리지 로드
+    function loadSavedState() {
+        try {
+            const savedMastery = localStorage.getItem(STORAGE_KEYS.MASTER);
+            if (savedMastery) appState.masteryMap = JSON.parse(savedMastery);
+
+            const savedTheme = localStorage.getItem(STORAGE_KEYS.THEME) || 'light';
+            document.documentElement.setAttribute('data-theme', savedTheme);
+            updateThemeButtonIcon(savedTheme);
+
+            const savedFontSize = localStorage.getItem(STORAGE_KEYS.FONT_SIZE);
+            if (savedFontSize) {
+                appState.fontSize = parseInt(savedFontSize);
+            } else {
+                appState.fontSize = 18;
+            }
+            applyFontSize();
+
+            const savedFontFamily = localStorage.getItem(STORAGE_KEYS.FONT_FAMILY);
+            if (savedFontFamily === 'serif') {
+                appState.isSerif = true;
+                document.documentElement.style.setProperty('--font-current', 'var(--font-serif)');
+                document.getElementById('btn-font-family').textContent = '고딕체';
+            }
+
+            checkAndRecordStreak();
+        } catch (e) {
+            console.error("Storage loading error:", e);
+        }
+    }
+
+    function saveMastery() {
+        localStorage.setItem(STORAGE_KEYS.MASTER, JSON.stringify(appState.masteryMap));
+        updateDashboardStats();
+    }
+
+    function checkAndRecordStreak() {
+        try {
+            const todayStr = new Date().toISOString().split('T')[0];
+            const rawStreak = localStorage.getItem(STORAGE_KEYS.STREAK);
+            let streakData = rawStreak ? JSON.parse(rawStreak) : { lastDate: '', count: 0 };
+
+            if (streakData.lastDate === todayStr) {
+                // 이미 오늘 기록됨
+            } else {
+                const yesterday = new Date();
+                yesterday.setDate(yesterday.getDate() - 1);
+                const yesterdayStr = yesterday.toISOString().split('T')[0];
+
+                if (streakData.lastDate === yesterdayStr) {
+                    streakData.count += 1;
+                } else if (streakData.lastDate !== todayStr) {
+                    streakData.count = 1;
+                }
+                streakData.lastDate = todayStr;
+                localStorage.setItem(STORAGE_KEYS.STREAK, JSON.stringify(streakData));
+            }
+            document.getElementById('stat-streak-count').textContent = `${streakData.count}일`;
+        } catch (e) {
+            console.error(e);
+        }
+    }
+
+    /* ========================================================
+       대시보드 통계 및 UI 동기화
+       ======================================================== */
+    function updateDashboardStats() {
+        const totalCount = ROMANS_8_DATA.length;
+        let masteredCount = 0;
+        let reviewCount = 0;
+
+        const partCounts = { ALL: { total: 39, done: 0 }, P1: { total: 11, done: 0 }, P2: { total: 6, done: 0 }, P3: { total: 13, done: 0 }, P4: { total: 9, done: 0 } };
+
+        ROMANS_8_DATA.forEach(v => {
+            const st = appState.masteryMap[v.num];
+            if (st === 'mastered') {
+                masteredCount++;
+                partCounts.ALL.done++;
+                if (partCounts[v.part]) partCounts[v.part].done++;
+            } else if (st === 'review') {
+                reviewCount++;
+            }
+        });
+
+        const percent = Math.round((masteredCount / totalCount) * 100);
+        document.getElementById('stat-overall-percent').textContent = `${percent}%`;
+        document.getElementById('stat-progress-fill').style.width = `${percent}%`;
+        document.getElementById('stat-mastered-count').textContent = masteredCount;
+        document.getElementById('stat-review-count').textContent = reviewCount;
+
+        // 파트별 카운트 업데이트
+        ['ALL', 'P1', 'P2', 'P3', 'P4'].forEach(p => {
+            const el = document.getElementById(`part-stat-${p}`);
+            if (el) el.textContent = `${partCounts[p].done}/${partCounts[p].total}`;
+        });
+
+        // 마지막 학습 구절 텍스트
+        const lastIdx = parseInt(localStorage.getItem(STORAGE_KEYS.LAST_INDEX) || "0");
+        const lastVerse = ROMANS_8_DATA[lastIdx] || ROMANS_8_DATA[0];
+        document.getElementById('resume-verse-text').textContent = `마지막 학습: ${lastVerse.ref}`;
+    }
+
+    /* ========================================================
+       화면 전환 제어
+       ======================================================== */
+    function showScreen(viewName) {
+        appState.currentView = viewName;
+        stopAllTts();
+
+        document.getElementById('home-screen').classList.add('hidden');
+        document.getElementById('game-screen').classList.add('hidden');
+        document.getElementById('read-screen').classList.add('hidden');
+        document.getElementById('session-progress-box').style.display = 'none';
+
+        if (viewName === 'home') {
+            document.getElementById('home-screen').classList.remove('hidden');
+            document.getElementById('header-main-title').textContent = '로마서 8장 암송';
+            document.getElementById('header-sub-title').textContent = '전장 39구절 마스터';
             updateDashboardStats();
+        } else if (viewName === 'game') {
+            document.getElementById('game-screen').classList.remove('hidden');
+            document.getElementById('session-progress-box').style.display = 'block';
+            document.getElementById('header-main-title').textContent = '로마서 8장 암송';
+        } else if (viewName === 'read') {
+            document.getElementById('read-screen').classList.remove('hidden');
+            document.getElementById('header-main-title').textContent = '로마서 8장 전문 통독';
+            document.getElementById('header-sub-title').textContent = '1절 ~ 39절 전체 묵상';
+            renderFullReadScreen();
         }
+    }
 
-        function checkAndRecordStreak() {
-            try {
-                const todayStr = new Date().toISOString().split('T')[0];
-                const rawStreak = localStorage.getItem(STORAGE_KEYS.STREAK);
-                let streakData = rawStreak ? JSON.parse(rawStreak) : { lastDate: '', count: 0 };
+    function selectPart(element, partKey) {
+        document.querySelectorAll('.part-card').forEach(c => c.classList.remove('active'));
+        element.classList.add('active');
+        appState.selectedPart = partKey;
+    }
 
-                if (streakData.lastDate === todayStr) {
-                    // 이미 오늘 기록됨
-                } else {
-                    const yesterday = new Date();
-                    yesterday.setDate(yesterday.getDate() - 1);
-                    const yesterdayStr = yesterday.toISOString().split('T')[0];
+    function setDifficulty(diffKey) {
+        document.querySelectorAll('#difficulty-pills .pill-btn').forEach(b => b.classList.remove('active'));
+        document.querySelector(`#difficulty-pills .pill-btn[data-diff="${diffKey}"]`).classList.add('active');
+        appState.difficulty = diffKey;
+    }
 
-                    if (streakData.lastDate === yesterdayStr) {
-                        streakData.count += 1;
-                    } else if (streakData.lastDate !== todayStr) {
-                        streakData.count = 1;
-                    }
-                    streakData.lastDate = todayStr;
-                    localStorage.setItem(STORAGE_KEYS.STREAK, JSON.stringify(streakData));
-                }
-                document.getElementById('stat-streak-count').textContent = `${streakData.count}일`;
-            } catch (e) {
-                console.error(e);
-            }
-        }
+    function setOrder(orderKey) {
+        document.querySelectorAll('#order-pills .pill-btn').forEach(b => b.classList.remove('active'));
+        document.querySelector(`#order-pills .pill-btn[data-order="${orderKey}"]`).classList.add('active');
+        appState.order = orderKey;
+    }
 
-        /* ========================================================
-           대시보드 통계 및 UI 동기화
-           ======================================================== */
-        function updateDashboardStats() {
-            const totalCount = ROMANS_8_DATA.length;
-            let masteredCount = 0;
-            let reviewCount = 0;
-
-            const partCounts = { ALL: { total: 39, done: 0 }, P1: { total: 11, done: 0 }, P2: { total: 6, done: 0 }, P3: { total: 13, done: 0 }, P4: { total: 9, done: 0 } };
-
-            ROMANS_8_DATA.forEach(v => {
-                const st = appState.masteryMap[v.num];
-                if (st === 'mastered') {
-                    masteredCount++;
-                    partCounts.ALL.done++;
-                    if (partCounts[v.part]) partCounts[v.part].done++;
-                } else if (st === 'review') {
-                    reviewCount++;
-                }
-            });
-
-            const percent = Math.round((masteredCount / totalCount) * 100);
-            document.getElementById('stat-overall-percent').textContent = `${percent}%`;
-            document.getElementById('stat-progress-fill').style.width = `${percent}%`;
-            document.getElementById('stat-mastered-count').textContent = masteredCount;
-            document.getElementById('stat-review-count').textContent = reviewCount;
-
-            // 파트별 카운트 업데이트
-            ['ALL', 'P1', 'P2', 'P3', 'P4'].forEach(p => {
-                const el = document.getElementById(`part-stat-${p}`);
-                if (el) el.textContent = `${partCounts[p].done}/${partCounts[p].total}`;
-            });
-
-            // 마지막 학습 구절 텍스트
+    function quickStart(mode) {
+        if (mode === 'resume') {
             const lastIdx = parseInt(localStorage.getItem(STORAGE_KEYS.LAST_INDEX) || "0");
-            const lastVerse = ROMANS_8_DATA[lastIdx] || ROMANS_8_DATA[0];
-            document.getElementById('resume-verse-text').textContent = `마지막 학습: ${lastVerse.ref}`;
-        }
-
-        /* ========================================================
-           화면 전환 제어
-           ======================================================== */
-        function showScreen(viewName) {
-            appState.currentView = viewName;
-            stopAllTts();
-
-            document.getElementById('home-screen').classList.add('hidden');
-            document.getElementById('game-screen').classList.add('hidden');
-            document.getElementById('read-screen').classList.add('hidden');
-            document.getElementById('session-progress-box').style.display = 'none';
-
-            if (viewName === 'home') {
-                document.getElementById('home-screen').classList.remove('hidden');
-                document.getElementById('header-main-title').textContent = '로마서 8장 암송';
-                document.getElementById('header-sub-title').textContent = '전장 39구절 마스터';
-                updateDashboardStats();
-            } else if (viewName === 'game') {
-                document.getElementById('game-screen').classList.remove('hidden');
-                document.getElementById('session-progress-box').style.display = 'block';
-                document.getElementById('header-main-title').textContent = '로마서 8장 암송';
-            } else if (viewName === 'read') {
-                document.getElementById('read-screen').classList.remove('hidden');
-                document.getElementById('header-main-title').textContent = '로마서 8장 전문 통독';
-                document.getElementById('header-sub-title').textContent = '1절 ~ 39절 전체 묵상';
-                renderFullReadScreen();
-            }
-        }
-
-        function selectPart(element, partKey) {
-            document.querySelectorAll('.part-card').forEach(c => c.classList.remove('active'));
-            element.classList.add('active');
-            appState.selectedPart = partKey;
-        }
-
-        function setDifficulty(diffKey) {
-            document.querySelectorAll('#difficulty-pills .pill-btn').forEach(b => b.classList.remove('active'));
-            document.querySelector(`#difficulty-pills .pill-btn[data-diff="${diffKey}"]`).classList.add('active');
-            appState.difficulty = diffKey;
-        }
-
-        function setOrder(orderKey) {
-            document.querySelectorAll('#order-pills .pill-btn').forEach(b => b.classList.remove('active'));
-            document.querySelector(`#order-pills .pill-btn[data-order="${orderKey}"]`).classList.add('active');
-            appState.order = orderKey;
-        }
-
-        function quickStart(mode) {
-            if (mode === 'resume') {
-                const lastIdx = parseInt(localStorage.getItem(STORAGE_KEYS.LAST_INDEX) || "0");
+            appState.selectedPart = 'ALL';
+            appState.order = 'seq';
+            startMemorization(lastIdx);
+        } else if (mode === 'seq') {
+            appState.selectedPart = 'ALL';
+            appState.order = 'seq';
+            startMemorization(0);
+        } else if (mode === 'random') {
+            appState.selectedPart = 'ALL';
+            appState.order = 'random';
+            startMemorization(0);
+        } else if (mode === 'review') {
+            // 헷갈리거나 미완료인 구절만 큐에 넣기
+            const reviewVerses = ROMANS_8_DATA.filter(v => appState.masteryMap[v.num] !== 'mastered');
+            if (reviewVerses.length === 0) {
+                showToast("🎉 이미 39구절을 모두 마스터하셨습니다! 전체 복습을 시작합니다.");
                 appState.selectedPart = 'ALL';
-                appState.order = 'seq';
-                startMemorization(lastIdx);
-            } else if (mode === 'seq') {
-                appState.selectedPart = 'ALL';
-                appState.order = 'seq';
                 startMemorization(0);
-            } else if (mode === 'random') {
-                appState.selectedPart = 'ALL';
-                appState.order = 'random';
-                startMemorization(0);
-            } else if (mode === 'review') {
-                // 헷갈리거나 미완료인 구절만 큐에 넣기
-                const reviewVerses = ROMANS_8_DATA.filter(v => appState.masteryMap[v.num] !== 'mastered');
-                if (reviewVerses.length === 0) {
-                    showToast("🎉 이미 39구절을 모두 마스터하셨습니다! 전체 복습을 시작합니다.");
-                    appState.selectedPart = 'ALL';
-                    startMemorization(0);
-                    return;
-                }
-                appState.studyQueue = [...reviewVerses];
-                appState.currentIndex = 0;
-                initDirectDropdown();
-                showScreen('game');
-                renderVerse(appState.currentIndex);
+                return;
             }
-        }
-
-        function switchToReadView() {
-            showScreen('read');
-        }
-
-        /* ========================================================
-           암송 학습 엔진 (Game Engine)
-           ======================================================== */
-        function startMemorization(targetIndex = 0) {
-            // 파트 필터링
-            let pool = [];
-            if (appState.selectedPart === 'ALL') {
-                pool = [...ROMANS_8_DATA];
-            } else {
-                pool = ROMANS_8_DATA.filter(v => v.part === appState.selectedPart);
-            }
-
-            if (appState.order === 'random') {
-                appState.studyQueue = shuffleArray(pool);
-                appState.currentIndex = 0;
-            } else {
-                appState.studyQueue = [...pool];
-                appState.currentIndex = Math.min(targetIndex, appState.studyQueue.length - 1);
-            }
-
+            appState.studyQueue = [...reviewVerses];
+            appState.currentIndex = 0;
             initDirectDropdown();
             showScreen('game');
             renderVerse(appState.currentIndex);
         }
+    }
 
-        function shuffleArray(arr) {
-            const copy = [...arr];
-            for (let i = copy.length - 1; i > 0; i--) {
-                const j = Math.floor(Math.random() * (i + 1));
-                [copy[i], copy[j]] = [copy[j], copy[i]];
+    function switchToReadView() {
+        showScreen('read');
+    }
+
+    /* ========================================================
+       암송 학습 엔진 (Game Engine)
+       ======================================================== */
+    function startMemorization(targetIndex = 0) {
+        // 파트 필터링
+        let pool = [];
+        if (appState.selectedPart === 'ALL') {
+            pool = [...ROMANS_8_DATA];
+        } else {
+            pool = ROMANS_8_DATA.filter(v => v.part === appState.selectedPart);
+        }
+
+        if (appState.order === 'random') {
+            appState.studyQueue = shuffleArray(pool);
+            appState.currentIndex = 0;
+        } else {
+            appState.studyQueue = [...pool];
+            appState.currentIndex = Math.min(targetIndex, appState.studyQueue.length - 1);
+        }
+
+        initDirectDropdown();
+        showScreen('game');
+        renderVerse(appState.currentIndex);
+    }
+
+    function shuffleArray(arr) {
+        const copy = [...arr];
+        for (let i = copy.length - 1; i > 0; i--) {
+            const j = Math.floor(Math.random() * (i + 1));
+            [copy[i], copy[j]] = [copy[j], copy[i]];
+        }
+        return copy;
+    }
+
+    function initDirectDropdown() {
+        const sel = document.getElementById('verse-quick-jump-select');
+        sel.innerHTML = '';
+        appState.studyQueue.forEach((v, idx) => {
+            const opt = document.createElement('option');
+            opt.value = idx;
+            opt.textContent = `${v.num}절 (${v.theme})`;
+            sel.appendChild(opt);
+        });
+    }
+
+    function jumpDirectToVerse(indexStr) {
+        appState.currentIndex = parseInt(indexStr);
+        renderVerse(appState.currentIndex);
+    }
+
+    // 구절 렌더링
+    function renderVerse(index) {
+        if (!appState.studyQueue[index]) return;
+        const verse = appState.studyQueue[index];
+        appState.isPeeking = false;
+
+        // 마지막 학습 위치 저장
+        localStorage.setItem(STORAGE_KEYS.LAST_INDEX, (verse.num - 1).toString());
+
+        // 헤더 및 프로그레스 업데이트
+        document.getElementById('verse-part-label').textContent = verse.partName.split('.')[0];
+        document.getElementById('verse-ref-label').textContent = verse.ref;
+        document.getElementById('header-sub-title').textContent = `${verse.ref} (${index + 1}/${appState.studyQueue.length})`;
+
+        const dropdown = document.getElementById('verse-quick-jump-select');
+        if (dropdown) dropdown.value = index;
+
+        const progressPercent = Math.round(((index + 1) / appState.studyQueue.length) * 100);
+        document.getElementById('session-progress-bar').style.width = `${progressPercent}%`;
+
+        // 마스터리 배지 버튼 동기화
+        updateMasteryButtons(verse.num);
+
+        // 성공 배지 숨김
+        document.getElementById('verse-success-box').classList.add('hidden');
+
+        // 난이도별 빈칸 확률 설정
+        let blankProb = 0.4;
+        switch (appState.difficulty) {
+            case 'easy': blankProb = 0.2; break;
+            case 'medium': blankProb = 0.4; break;
+            case 'hard': blankProb = 0.7; break;
+            case 'master': blankProb = 1.0; break;
+        }
+
+        const container = document.getElementById('verse-interactive-text');
+        container.innerHTML = '';
+
+        const words = verse.text.split(' ');
+
+        words.forEach((w) => {
+            const cleanWord = w.replace(/[.,:;?!\s]/g, '');
+            const suffix = w.slice(cleanWord.length);
+
+            const isBlank = (Math.random() < blankProb) && cleanWord.length > 0;
+
+            if (isBlank) {
+                const input = document.createElement('input');
+                input.type = 'text';
+                input.className = 'blank-input';
+                input.dataset.answer = cleanWord;
+                input.dataset.fullWord = w;
+                input.placeholder = '_'.repeat(cleanWord.length);
+                
+                // 가변 너비 계산
+                const calculatedWidth = Math.max(48, cleanWord.length * 24 + 10);
+                input.style.width = `${calculatedWidth}px`;
+
+                // 입력 이벤트 (실시간 검증 & 자동 포커스)
+                input.addEventListener('input', function() {
+                    const typed = this.value.trim();
+                    if (typed === this.dataset.answer) {
+                        this.classList.add('correct');
+                        this.disabled = true;
+                        checkAllBlanksCompleted();
+                        focusNextBlank(this);
+                    }
+                });
+
+                // 키보드 엔터/스페이스 이벤트
+                input.addEventListener('keydown', function(e) {
+                    if (e.key === 'Enter') {
+                        e.preventDefault();
+                        if (this.value.trim() === this.dataset.answer) {
+                            focusNextBlank(this);
+                        } else {
+                            // 오답 시 살짝 흔들림 효과
+                            this.style.transform = 'translateX(4px)';
+                            setTimeout(() => this.style.transform = '', 150);
+                        }
+                    }
+                });
+
+                container.appendChild(input);
+
+                if (suffix) {
+                    const sSpan = document.createElement('span');
+                    sSpan.className = 'verse-word';
+                    sSpan.textContent = suffix;
+                    container.appendChild(sSpan);
+                }
+            } else {
+                const span = document.createElement('span');
+                span.className = 'verse-word';
+                span.textContent = w;
+                container.appendChild(span);
             }
-            return copy;
+        });
+
+        // 첫 번째 빈칸으로 자동 포커스
+        setTimeout(() => {
+            const firstInput = container.querySelector('.blank-input');
+            if (firstInput) firstInput.focus();
+        }, 100);
+    }
+
+    function focusNextBlank(currentInput) {
+        const allInputs = Array.from(document.querySelectorAll('.blank-input:not(:disabled)'));
+        if (allInputs.length > 0) {
+            allInputs[0].focus();
+        }
+    }
+
+    function checkAllBlanksCompleted() {
+        const remaining = document.querySelectorAll('.blank-input:not(.correct)');
+        if (remaining.length === 0) {
+            // 전구절 빈칸 정답 완료!
+            triggerConfetti();
+            document.getElementById('verse-success-box').classList.remove('hidden');
+
+            const currVerse = appState.studyQueue[appState.currentIndex];
+            if (currVerse && !appState.masteryMap[currVerse.num]) {
+                appState.masteryMap[currVerse.num] = 'mastered';
+                saveMastery();
+                updateMasteryButtons(currVerse.num);
+            }
+        }
+    }
+
+    function showChoseongHint() {
+        const unfilled = document.querySelectorAll('.blank-input:not(.correct)');
+        if (unfilled.length === 0) {
+            showToast("모든 빈칸이 이미 완성되었습니다!");
+            return;
         }
 
-        function initDirectDropdown() {
-            const sel = document.getElementById('verse-quick-jump-select');
-            sel.innerHTML = '';
-            appState.studyQueue.forEach((v, idx) => {
-                const opt = document.createElement('option');
-                opt.value = idx;
-                opt.textContent = `${v.num}절 (${v.theme})`;
-                sel.appendChild(opt);
-            });
-        }
+        unfilled.forEach(inp => {
+            const ans = inp.dataset.answer;
+            inp.placeholder = getChoseong(ans);
+        });
 
-        function jumpDirectToVerse(indexStr) {
-            appState.currentIndex = parseInt(indexStr);
+        showToast("💡 아직 풀지 못한 빈칸에 초성 힌트를 표시했습니다!");
+        const firstUnfilled = unfilled[0];
+        if (firstUnfilled) firstUnfilled.focus();
+    }
+
+    function togglePeekAnswer() {
+        const verse = appState.studyQueue[appState.currentIndex];
+        if (!verse) return;
+
+        const container = document.getElementById('verse-interactive-text');
+        appState.isPeeking = !appState.isPeeking;
+
+        if (appState.isPeeking) {
+            container.innerHTML = `<div style="color:var(--primary); font-weight:700;">${verse.text}</div>`;
+            showToast("👁️ 정답 구절을 표시합니다. (다시 누르면 입력창 복귀)");
+        } else {
             renderVerse(appState.currentIndex);
         }
+    }
 
-        // 구절 렌더링
-        function renderVerse(index) {
-            if (!appState.studyQueue[index]) return;
-            const verse = appState.studyQueue[index];
-            appState.isPeeking = false;
+    function prevVerse() {
+        if (appState.currentIndex > 0) {
+            appState.currentIndex--;
+            renderVerse(appState.currentIndex);
+        } else {
+            showToast("첫 번째 구절입니다.");
+        }
+    }
 
-            // 마지막 학습 위치 저장
-            localStorage.setItem(STORAGE_KEYS.LAST_INDEX, (verse.num - 1).toString());
+    function nextVerse() {
+        if (appState.currentIndex < appState.studyQueue.length - 1) {
+            appState.currentIndex++;
+            renderVerse(appState.currentIndex);
+        } else {
+            showToast("🎉 로마서 8장의 마지막 구절입니다! 축하드립니다.");
+            triggerConfetti();
+        }
+    }
 
-            // 헤더 및 프로그레스 업데이트
-            document.getElementById('verse-part-label').textContent = verse.partName.split('.')[0];
-            document.getElementById('verse-ref-label').textContent = verse.ref;
-            document.getElementById('header-sub-title').textContent = `${verse.ref} (${index + 1}/${appState.studyQueue.length})`;
+    /* ========================================================
+       마스터리 (3단계 학습 상태) 제어
+       ======================================================== */
+    function toggleMastery(type) {
+        const verse = appState.studyQueue[appState.currentIndex];
+        if (!verse) return;
 
-            const dropdown = document.getElementById('verse-quick-jump-select');
-            if (dropdown) dropdown.value = index;
-
-            const progressPercent = Math.round(((index + 1) / appState.studyQueue.length) * 100);
-            document.getElementById('session-progress-bar').style.width = `${progressPercent}%`;
-
-            // 마스터리 배지 버튼 동기화
-            updateMasteryButtons(verse.num);
-
-            // 성공 배지 숨김
-            document.getElementById('verse-success-box').classList.add('hidden');
-
-            // 난이도별 빈칸 확률 설정
-            let blankProb = 0.4;
-            switch (appState.difficulty) {
-                case 'easy': blankProb = 0.2; break;
-                case 'medium': blankProb = 0.4; break;
-                case 'hard': blankProb = 0.7; break;
-                case 'master': blankProb = 1.0; break;
-            }
-
-            const container = document.getElementById('verse-interactive-text');
-            container.innerHTML = '';
-
-            const words = verse.text.split(' ');
-
-            words.forEach((w) => {
-                const cleanWord = w.replace(/[.,:;?!\s]/g, '');
-                const suffix = w.slice(cleanWord.length);
-
-                const isBlank = (Math.random() < blankProb) && cleanWord.length > 0;
-
-                if (isBlank) {
-                    const input = document.createElement('input');
-                    input.type = 'text';
-                    input.className = 'blank-input';
-                    input.dataset.answer = cleanWord;
-                    input.dataset.fullWord = w;
-                    input.placeholder = '_'.repeat(cleanWord.length);
-
-                    // 가변 너비 계산
-                    const calculatedWidth = Math.max(48, cleanWord.length * 24 + 10);
-                    input.style.width = `${calculatedWidth}px`;
-
-                    // 입력 이벤트 (실시간 검증 & 자동 포커스)
-                    input.addEventListener('input', function () {
-                        const typed = this.value.trim();
-                        if (typed === this.dataset.answer) {
-                            this.classList.add('correct');
-                            this.disabled = true;
-                            checkAllBlanksCompleted();
-                            focusNextBlank(this);
-                        }
-                    });
-
-                    // 키보드 엔터/스페이스 이벤트
-                    input.addEventListener('keydown', function (e) {
-                        if (e.key === 'Enter') {
-                            e.preventDefault();
-                            if (this.value.trim() === this.dataset.answer) {
-                                focusNextBlank(this);
-                            } else {
-                                // 오답 시 살짝 흔들림 효과
-                                this.style.transform = 'translateX(4px)';
-                                setTimeout(() => this.style.transform = '', 150);
-                            }
-                        }
-                    });
-
-                    container.appendChild(input);
-
-                    if (suffix) {
-                        const sSpan = document.createElement('span');
-                        sSpan.className = 'verse-word';
-                        sSpan.textContent = suffix;
-                        container.appendChild(sSpan);
-                    }
-                } else {
-                    const span = document.createElement('span');
-                    span.className = 'verse-word';
-                    span.textContent = w;
-                    container.appendChild(span);
-                }
-            });
-
-            // 첫 번째 빈칸으로 자동 포커스
-            setTimeout(() => {
-                const firstInput = container.querySelector('.blank-input');
-                if (firstInput) firstInput.focus();
-            }, 100);
+        if (appState.masteryMap[verse.num] === type) {
+            delete appState.masteryMap[verse.num];
+            showToast(`[${verse.ref}] 학습 상태를 해제했습니다.`);
+        } else {
+            appState.masteryMap[verse.num] = type;
+            showToast(type === 'mastered' ? `🌟 [${verse.ref}] 외운 말씀으로 체크 완료!` : `🤔 [${verse.ref}] 복습 필요 구절로 지정되었습니다.`);
+            if (type === 'mastered') triggerConfetti();
         }
 
-        function focusNextBlank(currentInput) {
-            const allInputs = Array.from(document.querySelectorAll('.blank-input:not(:disabled)'));
-            if (allInputs.length > 0) {
-                allInputs[0].focus();
-            }
+        saveMastery();
+        updateMasteryButtons(verse.num);
+    }
+
+    function updateMasteryButtons(verseNum) {
+        const btnMaster = document.getElementById('btn-mark-master');
+        const btnReview = document.getElementById('btn-mark-review');
+        const status = appState.masteryMap[verseNum];
+
+        btnMaster.classList.remove('active-master');
+        btnReview.classList.remove('active-review');
+
+        if (status === 'mastered') {
+            btnMaster.classList.add('active-master');
+        } else if (status === 'review') {
+            btnReview.classList.add('active-review');
+        }
+    }
+
+    /* ========================================================
+       음성 낭독 (Web Speech API TTS)
+       ======================================================== */
+    function toggleTtsCurrentVerse() {
+        if (!('speechSynthesis' in window)) {
+            showToast("이 브라우저는 음성 낭독(TTS)을 지원하지 않습니다.");
+            return;
         }
 
-        function checkAllBlanksCompleted() {
-            const remaining = document.querySelectorAll('.blank-input:not(.correct)');
-            if (remaining.length === 0) {
-                // 전구절 빈칸 정답 완료!
-                triggerConfetti();
-                document.getElementById('verse-success-box').classList.remove('hidden');
+        const btn = document.getElementById('btn-tts-play');
 
-                const currVerse = appState.studyQueue[appState.currentIndex];
-                if (currVerse && !appState.masteryMap[currVerse.num]) {
-                    appState.masteryMap[currVerse.num] = 'mastered';
-                    saveMastery();
-                    updateMasteryButtons(currVerse.num);
-                }
-            }
+        if (window.speechSynthesis.speaking) {
+            window.speechSynthesis.cancel();
+            btn.classList.remove('playing');
+            btn.textContent = '🔊';
+            return;
         }
 
-        function showChoseongHint() {
-            const unfilled = document.querySelectorAll('.blank-input:not(.correct)');
-            if (unfilled.length === 0) {
-                showToast("모든 빈칸이 이미 완성되었습니다!");
-                return;
-            }
+        const verse = appState.studyQueue[appState.currentIndex];
+        if (!verse) return;
 
-            unfilled.forEach(inp => {
-                const ans = inp.dataset.answer;
-                inp.placeholder = getChoseong(ans);
-            });
+        const utterance = new SpeechSynthesisUtterance(`${verse.ref}. ${verse.text}`);
+        utterance.lang = 'ko-KR';
+        utterance.rate = 0.9; // 편안한 낭독 속도
 
-            showToast("💡 아직 풀지 못한 빈칸에 초성 힌트를 표시했습니다!");
-            const firstUnfilled = unfilled[0];
-            if (firstUnfilled) firstUnfilled.focus();
+        utterance.onstart = () => {
+            btn.classList.add('playing');
+            btn.textContent = '⏸️';
+        };
+
+        utterance.onend = () => {
+            btn.classList.remove('playing');
+            btn.textContent = '🔊';
+        };
+
+        utterance.onerror = () => {
+            btn.classList.remove('playing');
+            btn.textContent = '🔊';
+        };
+
+        window.speechSynthesis.speak(utterance);
+    }
+
+    function stopAllTts() {
+        if ('speechSynthesis' in window) {
+            window.speechSynthesis.cancel();
         }
-
-        function togglePeekAnswer() {
-            const verse = appState.studyQueue[appState.currentIndex];
-            if (!verse) return;
-
-            const container = document.getElementById('verse-interactive-text');
-            appState.isPeeking = !appState.isPeeking;
-
-            if (appState.isPeeking) {
-                container.innerHTML = `<div style="color:var(--primary); font-weight:700;">${verse.text}</div>`;
-                showToast("👁️ 정답 구절을 표시합니다. (다시 누르면 입력창 복귀)");
-            } else {
-                renderVerse(appState.currentIndex);
-            }
+        const btn = document.getElementById('btn-tts-play');
+        if (btn) {
+            btn.classList.remove('playing');
+            btn.textContent = '🔊';
         }
-
-        function prevVerse() {
-            if (appState.currentIndex > 0) {
-                appState.currentIndex--;
-                renderVerse(appState.currentIndex);
-            } else {
-                showToast("첫 번째 구절입니다.");
-            }
+        appState.isReadingAllTts = false;
+        const readBtn = document.getElementById('btn-read-all-tts');
+        if (readBtn) {
+            document.getElementById('read-tts-icon').textContent = '▶️';
+            document.getElementById('read-tts-label').textContent = '전체 연속 낭독';
         }
+        document.querySelectorAll('.full-verse-card').forEach(c => c.classList.remove('reading-active'));
+    }
 
-        function nextVerse() {
-            if (appState.currentIndex < appState.studyQueue.length - 1) {
-                appState.currentIndex++;
-                renderVerse(appState.currentIndex);
-            } else {
-                showToast("🎉 로마서 8장의 마지막 구절입니다! 축하드립니다.");
-                triggerConfetti();
-            }
-        }
+    /* ========================================================
+       39절 전체 통독 뷰 (#read-screen)
+       ======================================================== */
+    function renderFullReadScreen() {
+        const container = document.getElementById('read-full-content');
+        container.innerHTML = '';
 
-        /* ========================================================
-           마스터리 (3단계 학습 상태) 제어
-           ======================================================== */
-        function toggleMastery(type) {
-            const verse = appState.studyQueue[appState.currentIndex];
-            if (!verse) return;
+        let currentPart = '';
 
-            if (appState.masteryMap[verse.num] === type) {
-                delete appState.masteryMap[verse.num];
-                showToast(`[${verse.ref}] 학습 상태를 해제했습니다.`);
-            } else {
-                appState.masteryMap[verse.num] = type;
-                showToast(type === 'mastered' ? `🌟 [${verse.ref}] 외운 말씀으로 체크 완료!` : `🤔 [${verse.ref}] 복습 필요 구절로 지정되었습니다.`);
-                if (type === 'mastered') triggerConfetti();
+        ROMANS_8_DATA.forEach((v, idx) => {
+            if (v.part !== currentPart) {
+                currentPart = v.part;
+                const partHead = document.createElement('div');
+                partHead.className = 'full-part-heading';
+                partHead.innerHTML = `<span>📌 ${v.partName}</span>`;
+                container.appendChild(partHead);
             }
 
-            saveMastery();
-            updateMasteryButtons(verse.num);
-        }
+            const card = document.createElement('div');
+            card.className = 'full-verse-card';
+            card.id = `full-card-${idx}`;
+            card.style.fontSize = `${appState.fontSize}px`;
 
-        function updateMasteryButtons(verseNum) {
-            const btnMaster = document.getElementById('btn-mark-master');
-            const btnReview = document.getElementById('btn-mark-review');
-            const status = appState.masteryMap[verseNum];
+            const masterBadge = appState.masteryMap[v.num] === 'mastered' ? '🌟' : (appState.masteryMap[v.num] === 'review' ? '🤔' : '');
 
-            btnMaster.classList.remove('active-master');
-            btnReview.classList.remove('active-review');
-
-            if (status === 'mastered') {
-                btnMaster.classList.add('active-master');
-            } else if (status === 'review') {
-                btnReview.classList.add('active-review');
-            }
-        }
-
-        /* ========================================================
-           음성 낭독 (Web Speech API TTS)
-           ======================================================== */
-        function toggleTtsCurrentVerse() {
-            if (!('speechSynthesis' in window)) {
-                showToast("이 브라우저는 음성 낭독(TTS)을 지원하지 않습니다.");
-                return;
-            }
-
-            const btn = document.getElementById('btn-tts-play');
-
-            if (window.speechSynthesis.speaking) {
-                window.speechSynthesis.cancel();
-                btn.classList.remove('playing');
-                btn.textContent = '🔊';
-                return;
-            }
-
-            const verse = appState.studyQueue[appState.currentIndex];
-            if (!verse) return;
-
-            const utterance = new SpeechSynthesisUtterance(`${verse.ref}. ${verse.text}`);
-            utterance.lang = 'ko-KR';
-            utterance.rate = 0.9; // 편안한 낭독 속도
-
-            utterance.onstart = () => {
-                btn.classList.add('playing');
-                btn.textContent = '⏸️';
-            };
-
-            utterance.onend = () => {
-                btn.classList.remove('playing');
-                btn.textContent = '🔊';
-            };
-
-            utterance.onerror = () => {
-                btn.classList.remove('playing');
-                btn.textContent = '🔊';
-            };
-
-            window.speechSynthesis.speak(utterance);
-        }
-
-        function stopAllTts() {
-            if ('speechSynthesis' in window) {
-                window.speechSynthesis.cancel();
-            }
-            const btn = document.getElementById('btn-tts-play');
-            if (btn) {
-                btn.classList.remove('playing');
-                btn.textContent = '🔊';
-            }
-            appState.isReadingAllTts = false;
-            const readBtn = document.getElementById('btn-read-all-tts');
-            if (readBtn) {
-                document.getElementById('read-tts-icon').textContent = '▶️';
-                document.getElementById('read-tts-label').textContent = '전체 연속 낭독';
-            }
-            document.querySelectorAll('.full-verse-card').forEach(c => c.classList.remove('reading-active'));
-        }
-
-        /* ========================================================
-           39절 전체 통독 뷰 (#read-screen)
-           ======================================================== */
-        function renderFullReadScreen() {
-            const container = document.getElementById('read-full-content');
-            container.innerHTML = '';
-
-            let currentPart = '';
-
-            ROMANS_8_DATA.forEach((v, idx) => {
-                if (v.part !== currentPart) {
-                    currentPart = v.part;
-                    const partHead = document.createElement('div');
-                    partHead.className = 'full-part-heading';
-                    partHead.innerHTML = `<span>📌 ${v.partName}</span>`;
-                    container.appendChild(partHead);
-                }
-
-                const card = document.createElement('div');
-                card.className = 'full-verse-card';
-                card.id = `full-card-${idx}`;
-                card.style.fontSize = `${appState.fontSize}px`;
-
-                const masterBadge = appState.masteryMap[v.num] === 'mastered' ? '🌟' : (appState.masteryMap[v.num] === 'review' ? '🤔' : '');
-
-                card.innerHTML = `
+            card.innerHTML = `
                 <div class="full-verse-header">
                     <span class="full-verse-num">${v.ref} <span style="font-size:0.75rem; font-weight:normal; color:var(--text-muted);">(${v.theme})</span></span>
                     <span>${masterBadge}</span>
@@ -2572,132 +2537,132 @@
                 <div class="full-verse-body">${v.text}</div>
             `;
 
-                // 클릭 시 해당 구절 바로 암송 시작
-                card.onclick = () => {
-                    appState.selectedPart = 'ALL';
-                    appState.order = 'seq';
-                    startMemorization(idx);
-                };
+            // 클릭 시 해당 구절 바로 암송 시작
+            card.onclick = () => {
+                appState.selectedPart = 'ALL';
+                appState.order = 'seq';
+                startMemorization(idx);
+            };
 
-                container.appendChild(card);
-            });
+            container.appendChild(card);
+        });
+    }
+
+    function adjustFontSize(delta) {
+        appState.fontSize = Math.min(32, Math.max(14, appState.fontSize + delta * 2));
+        localStorage.setItem(STORAGE_KEYS.FONT_SIZE, appState.fontSize.toString());
+        applyFontSize();
+        showToast(`글자 크기: ${appState.fontSize}px`);
+    }
+
+    function applyFontSize() {
+        document.documentElement.style.setProperty('--read-font-size', `${appState.fontSize}px`);
+        document.documentElement.style.setProperty('--game-font-size', `${appState.fontSize + 3}px`);
+        const label = document.getElementById('current-font-size-label');
+        if (label) label.textContent = `${appState.fontSize}px`;
+    }
+
+    function toggleFontFamily() {
+        appState.isSerif = !appState.isSerif;
+        const fontName = appState.isSerif ? 'serif' : 'sans';
+        localStorage.setItem(STORAGE_KEYS.FONT_FAMILY, fontName);
+
+        if (appState.isSerif) {
+            document.documentElement.style.setProperty('--font-current', 'var(--font-serif)');
+            document.getElementById('btn-font-family').textContent = '고딕체';
+        } else {
+            document.documentElement.style.setProperty('--font-current', 'var(--font-sans)');
+            document.getElementById('btn-font-family').textContent = '명조체';
+        }
+    }
+
+    function toggleContinuousTts() {
+        if (!('speechSynthesis' in window)) {
+            showToast("이 브라우저는 음성 낭독을 지원하지 않습니다.");
+            return;
         }
 
-        function adjustFontSize(delta) {
-            appState.fontSize = Math.min(32, Math.max(14, appState.fontSize + delta * 2));
-            localStorage.setItem(STORAGE_KEYS.FONT_SIZE, appState.fontSize.toString());
-            applyFontSize();
-            showToast(`글자 크기: ${appState.fontSize}px`);
+        if (appState.isReadingAllTts) {
+            stopAllTts();
+            return;
         }
 
-        function applyFontSize() {
-            document.documentElement.style.setProperty('--read-font-size', `${appState.fontSize}px`);
-            document.documentElement.style.setProperty('--game-font-size', `${appState.fontSize + 3}px`);
-            const label = document.getElementById('current-font-size-label');
-            if (label) label.textContent = `${appState.fontSize}px`;
+        appState.isReadingAllTts = true;
+        appState.readAllTtsIndex = 0;
+        document.getElementById('read-tts-icon').textContent = '⏸️';
+        document.getElementById('read-tts-label').textContent = '낭독 중지';
+
+        playNextContinuousVerse();
+    }
+
+    function playNextContinuousVerse() {
+        if (!appState.isReadingAllTts || appState.readAllTtsIndex >= ROMANS_8_DATA.length) {
+            stopAllTts();
+            return;
         }
 
-        function toggleFontFamily() {
-            appState.isSerif = !appState.isSerif;
-            const fontName = appState.isSerif ? 'serif' : 'sans';
-            localStorage.setItem(STORAGE_KEYS.FONT_FAMILY, fontName);
+        const idx = appState.readAllTtsIndex;
+        const v = ROMANS_8_DATA[idx];
 
-            if (appState.isSerif) {
-                document.documentElement.style.setProperty('--font-current', 'var(--font-serif)');
-                document.getElementById('btn-font-family').textContent = '고딕체';
-            } else {
-                document.documentElement.style.setProperty('--font-current', 'var(--font-sans)');
-                document.getElementById('btn-font-family').textContent = '명조체';
-            }
+        // 활성 카드 하이라이트 & 자동 스크롤
+        document.querySelectorAll('.full-verse-card').forEach(c => c.classList.remove('reading-active'));
+        const card = document.getElementById(`full-card-${idx}`);
+        if (card) {
+            card.classList.add('reading-active');
+            card.scrollIntoView({ behavior: 'smooth', block: 'center' });
         }
 
-        function toggleContinuousTts() {
-            if (!('speechSynthesis' in window)) {
-                showToast("이 브라우저는 음성 낭독을 지원하지 않습니다.");
-                return;
-            }
+        const utterance = new SpeechSynthesisUtterance(`${v.num}절. ${v.text}`);
+        utterance.lang = 'ko-KR';
+        utterance.rate = 0.9;
 
+        utterance.onend = () => {
             if (appState.isReadingAllTts) {
-                stopAllTts();
-                return;
+                appState.readAllTtsIndex++;
+                setTimeout(playNextContinuousVerse, 600); // 구절 사이 숨고르기 딜레이
             }
+        };
 
-            appState.isReadingAllTts = true;
-            appState.readAllTtsIndex = 0;
-            document.getElementById('read-tts-icon').textContent = '⏸️';
-            document.getElementById('read-tts-label').textContent = '낭독 중지';
+        utterance.onerror = () => {
+            stopAllTts();
+        };
 
-            playNextContinuousVerse();
-        }
+        window.speechSynthesis.speak(utterance);
+    }
 
-        function playNextContinuousVerse() {
-            if (!appState.isReadingAllTts || appState.readAllTtsIndex >= ROMANS_8_DATA.length) {
-                stopAllTts();
-                return;
-            }
+    /* ========================================================
+       목차 사이드바 (#toc-sidebar)
+       ======================================================== */
+    function openSidebar() {
+        renderTocItems();
+        document.getElementById('toc-sidebar').classList.add('open');
+        document.getElementById('sidebar-overlay').classList.add('active');
+    }
 
-            const idx = appState.readAllTtsIndex;
-            const v = ROMANS_8_DATA[idx];
+    function closeSidebar() {
+        document.getElementById('toc-sidebar').classList.remove('open');
+        document.getElementById('sidebar-overlay').classList.remove('active');
+    }
 
-            // 활성 카드 하이라이트 & 자동 스크롤
-            document.querySelectorAll('.full-verse-card').forEach(c => c.classList.remove('reading-active'));
-            const card = document.getElementById(`full-card-${idx}`);
-            if (card) {
-                card.classList.add('reading-active');
-                card.scrollIntoView({ behavior: 'smooth', block: 'center' });
-            }
+    function renderTocItems(filterText = '') {
+        const container = document.getElementById('toc-items-container');
+        container.innerHTML = '';
 
-            const utterance = new SpeechSynthesisUtterance(`${v.num}절. ${v.text}`);
-            utterance.lang = 'ko-KR';
-            utterance.rate = 0.9;
+        const lower = filterText.toLowerCase();
 
-            utterance.onend = () => {
-                if (appState.isReadingAllTts) {
-                    appState.readAllTtsIndex++;
-                    setTimeout(playNextContinuousVerse, 600); // 구절 사이 숨고르기 딜레이
-                }
-            };
+        ROMANS_8_DATA.forEach((v, idx) => {
+            const matches = v.ref.toLowerCase().includes(lower) || 
+                            v.text.toLowerCase().includes(lower) || 
+                            v.theme.toLowerCase().includes(lower);
 
-            utterance.onerror = () => {
-                stopAllTts();
-            };
+            if (!matches) return;
 
-            window.speechSynthesis.speak(utterance);
-        }
+            const div = document.createElement('div');
+            div.className = 'toc-item';
+            
+            const badge = appState.masteryMap[v.num] === 'mastered' ? '🌟' : (appState.masteryMap[v.num] === 'review' ? '🤔' : '⭕');
 
-        /* ========================================================
-           목차 사이드바 (#toc-sidebar)
-           ======================================================== */
-        function openSidebar() {
-            renderTocItems();
-            document.getElementById('toc-sidebar').classList.add('open');
-            document.getElementById('sidebar-overlay').classList.add('active');
-        }
-
-        function closeSidebar() {
-            document.getElementById('toc-sidebar').classList.remove('open');
-            document.getElementById('sidebar-overlay').classList.remove('active');
-        }
-
-        function renderTocItems(filterText = '') {
-            const container = document.getElementById('toc-items-container');
-            container.innerHTML = '';
-
-            const lower = filterText.toLowerCase();
-
-            ROMANS_8_DATA.forEach((v, idx) => {
-                const matches = v.ref.toLowerCase().includes(lower) ||
-                    v.text.toLowerCase().includes(lower) ||
-                    v.theme.toLowerCase().includes(lower);
-
-                if (!matches) return;
-
-                const div = document.createElement('div');
-                div.className = 'toc-item';
-
-                const badge = appState.masteryMap[v.num] === 'mastered' ? '🌟' : (appState.masteryMap[v.num] === 'review' ? '🤔' : '⭕');
-
-                div.innerHTML = `
+            div.innerHTML = `
                 <div class="toc-item-left">
                     <span class="toc-item-ref">${v.ref} · ${v.theme}</span>
                     <span class="toc-item-text">${v.text}</span>
@@ -2705,147 +2670,173 @@
                 <span class="toc-item-badge">${badge}</span>
             `;
 
-                div.onclick = () => {
-                    closeSidebar();
-                    appState.selectedPart = 'ALL';
-                    appState.order = 'seq';
-                    startMemorization(idx);
-                };
+            div.onclick = () => {
+                closeSidebar();
+                appState.selectedPart = 'ALL';
+                appState.order = 'seq';
+                startMemorization(idx);
+            };
 
-                container.appendChild(div);
+            container.appendChild(div);
+        });
+    }
+
+    function filterTocList(query) {
+        renderTocItems(query);
+    }
+
+    /* ========================================================
+       다크모드 & 유틸리티
+       ======================================================== */
+    function toggleTheme() {
+        const curr = document.documentElement.getAttribute('data-theme') || 'light';
+        const next = curr === 'dark' ? 'light' : 'dark';
+        document.documentElement.setAttribute('data-theme', next);
+        localStorage.setItem(STORAGE_KEYS.THEME, next);
+        updateThemeButtonIcon(next);
+        showToast(next === 'dark' ? '🌙 다크 모드로 전환되었습니다.' : '☀️ 라이트 모드로 전환되었습니다.');
+    }
+
+    function updateThemeButtonIcon(theme) {
+        const btn = document.getElementById('btn-toggle-theme');
+        if (btn) btn.textContent = theme === 'dark' ? '☀️' : '🌙';
+    }
+
+    function showToast(msg) {
+        const t = document.getElementById('toast');
+        t.textContent = msg;
+        t.classList.add('show');
+        setTimeout(() => t.classList.remove('show'), 2200);
+    }
+
+    /* ========================================================
+       🎉 축하 꽃가루 (Confetti Particle Canvas)
+       ======================================================== */
+    function triggerConfetti() {
+        const canvas = document.getElementById('confetti-canvas');
+        const ctx = canvas.getContext('2d');
+        canvas.width = canvas.parentElement.clientWidth;
+        canvas.height = canvas.parentElement.clientHeight;
+
+        const particles = [];
+        const colors = ['#3b82f6', '#10b981', '#f59e0b', '#ef4444', '#8b5cf6', '#ec4899'];
+
+        for (let i = 0; i < 65; i++) {
+            particles.push({
+                x: canvas.width / 2,
+                y: canvas.height / 2 + 50,
+                vx: (Math.random() - 0.5) * 14,
+                vy: (Math.random() - 0.8) * 16,
+                size: Math.random() * 8 + 4,
+                color: colors[Math.floor(Math.random() * colors.length)],
+                rotation: Math.random() * 360,
+                vRot: (Math.random() - 0.5) * 10,
+                alpha: 1
             });
         }
 
-        function filterTocList(query) {
-            renderTocItems(query);
-        }
+        let animationFrame;
+        function renderParticles() {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            let alive = false;
 
-        /* ========================================================
-           다크모드 & 유틸리티
-           ======================================================== */
-        function toggleTheme() {
-            const curr = document.documentElement.getAttribute('data-theme') || 'light';
-            const next = curr === 'dark' ? 'light' : 'dark';
-            document.documentElement.setAttribute('data-theme', next);
-            localStorage.setItem(STORAGE_KEYS.THEME, next);
-            updateThemeButtonIcon(next);
-            showToast(next === 'dark' ? '🌙 다크 모드로 전환되었습니다.' : '☀️ 라이트 모드로 전환되었습니다.');
-        }
+            particles.forEach(p => {
+                p.x += p.vx;
+                p.y += p.vy;
+                p.vy += 0.4; // 중력
+                p.rotation += p.vRot;
+                p.alpha -= 0.015;
 
-        function updateThemeButtonIcon(theme) {
-            const btn = document.getElementById('btn-toggle-theme');
-            if (btn) btn.textContent = theme === 'dark' ? '☀️' : '🌙';
-        }
-
-        function showToast(msg) {
-            const t = document.getElementById('toast');
-            t.textContent = msg;
-            t.classList.add('show');
-            setTimeout(() => t.classList.remove('show'), 2200);
-        }
-
-        /* ========================================================
-           🎉 축하 꽃가루 (Confetti Particle Canvas)
-           ======================================================== */
-        function triggerConfetti() {
-            const canvas = document.getElementById('confetti-canvas');
-            const ctx = canvas.getContext('2d');
-            canvas.width = canvas.parentElement.clientWidth;
-            canvas.height = canvas.parentElement.clientHeight;
-
-            const particles = [];
-            const colors = ['#3b82f6', '#10b981', '#f59e0b', '#ef4444', '#8b5cf6', '#ec4899'];
-
-            for (let i = 0; i < 65; i++) {
-                particles.push({
-                    x: canvas.width / 2,
-                    y: canvas.height / 2 + 50,
-                    vx: (Math.random() - 0.5) * 14,
-                    vy: (Math.random() - 0.8) * 16,
-                    size: Math.random() * 8 + 4,
-                    color: colors[Math.floor(Math.random() * colors.length)],
-                    rotation: Math.random() * 360,
-                    vRot: (Math.random() - 0.5) * 10,
-                    alpha: 1
-                });
-            }
-
-            let animationFrame;
-            function renderParticles() {
-                ctx.clearRect(0, 0, canvas.width, canvas.height);
-                let alive = false;
-
-                particles.forEach(p => {
-                    p.x += p.vx;
-                    p.y += p.vy;
-                    p.vy += 0.4; // 중력
-                    p.rotation += p.vRot;
-                    p.alpha -= 0.015;
-
-                    if (p.alpha > 0) {
-                        alive = true;
-                        ctx.save();
-                        ctx.globalAlpha = p.alpha;
-                        ctx.translate(p.x, p.y);
-                        ctx.rotate((p.rotation * Math.PI) / 180);
-                        ctx.fillStyle = p.color;
-                        ctx.fillRect(-p.size / 2, -p.size / 2, p.size, p.size);
-                        ctx.restore();
-                    }
-                });
-
-                if (alive) {
-                    animationFrame = requestAnimationFrame(renderParticles);
-                } else {
-                    ctx.clearRect(0, 0, canvas.width, canvas.height);
+                if (p.alpha > 0) {
+                    alive = true;
+                    ctx.save();
+                    ctx.globalAlpha = p.alpha;
+                    ctx.translate(p.x, p.y);
+                    ctx.rotate((p.rotation * Math.PI) / 180);
+                    ctx.fillStyle = p.color;
+                    ctx.fillRect(-p.size / 2, -p.size / 2, p.size, p.size);
+                    ctx.restore();
                 }
-            }
+            });
 
-            renderParticles();
+            if (alive) {
+                animationFrame = requestAnimationFrame(renderParticles);
+            } else {
+                ctx.clearRect(0, 0, canvas.width, canvas.height);
+            }
         }
 
+        renderParticles();
+    }
+
+    /* ========================================================
+       키보드 단축키 & 제스처 리스너
+       ======================================================== */
+    window.addEventListener('keydown', (e) => {
+        if (appState.currentView !== 'game') return;
+
+        // 인풋에 포커스가 없을 때 화살표 좌우로 구절 이동
+        if (document.activeElement.tagName !== 'INPUT') {
+            if (e.key === 'ArrowLeft') prevVerse();
+            if (e.key === 'ArrowRight') nextVerse();
+            if (e.key === 'h' || e.key === 'H') showChoseongHint();
+            if (e.key === 's' || e.key === 'S') toggleTtsCurrentVerse();
+        }
+    });
+
+    // 모바일 좌우 스와이프 제스처
+    let touchStartX = 0;
+    let touchStartY = 0;
+    const appEl = document.getElementById('app-container');
+
+    appEl.addEventListener('touchstart', (e) => {
+        touchStartX = e.changedTouches[0].screenX;
+        touchStartY = e.changedTouches[0].screenY;
+    }, { passive: true });
+
+    appEl.addEventListener('touchend', (e) => {
+        if (appState.currentView !== 'game') return;
+        const diffX = e.changedTouches[0].screenX - touchStartX;
+        const diffY = e.changedTouches[0].screenY - touchStartY;
+
+        // 수평 스와이프 판정 (수직 스크롤 제외)
+        if (Math.abs(diffX) > 60 && Math.abs(diffY) < 50) {
+            if (diffX < 0) nextVerse(); // 왼쪽으로 스와이프 -> 다음
+            else prevVerse();           // 오른쪽으로 스와이프 -> 이전
+        }
+    }, { passive: true });
+
         /* ========================================================
-           키보드 단축키 & 제스처 리스너
+           주소 공유 및 클립보드 복사
            ======================================================== */
-        window.addEventListener('keydown', (e) => {
-            if (appState.currentView !== 'game') return;
-
-            // 인풋에 포커스가 없을 때 화살표 좌우로 구절 이동
-            if (document.activeElement.tagName !== 'INPUT') {
-                if (e.key === 'ArrowLeft') prevVerse();
-                if (e.key === 'ArrowRight') nextVerse();
-                if (e.key === 'h' || e.key === 'H') showChoseongHint();
-                if (e.key === 's' || e.key === 'S') toggleTtsCurrentVerse();
+        function shareApp() {
+            const shareUrl = 'https://romanamsong.vercel.app/';
+            const shareTitle = '로마서 8장 성경 암송 (전장 39구절 마스터)';
+            const shareText = '성경의 다이아몬드 로마서 8장 39구절 전장 암송 웹 애플리케이션! 단계별 빈칸 훈련과 음성 낭독으로 마스터해보세요.';
+            
+            if (navigator.share) {
+                navigator.share({
+                    title: shareTitle,
+                    text: shareText,
+                    url: shareUrl
+                }).catch(() => {});
+            } else if (navigator.clipboard && navigator.clipboard.writeText) {
+                navigator.clipboard.writeText(shareUrl).then(() => {
+                    showToast('🔗 로마서 8장 암송 주소가 복사되었습니다!');
+                }).catch(() => {
+                    prompt('로마서 8장 암송 주소 복사 (Ctrl+C):', shareUrl);
+                });
+            } else {
+                prompt('로마서 8장 암송 주소 복사 (Ctrl+C):', shareUrl);
             }
-        });
-
-        // 모바일 좌우 스와이프 제스처
-        let touchStartX = 0;
-        let touchStartY = 0;
-        const appEl = document.getElementById('app-container');
-
-        appEl.addEventListener('touchstart', (e) => {
-            touchStartX = e.changedTouches[0].screenX;
-            touchStartY = e.changedTouches[0].screenY;
-        }, { passive: true });
-
-        appEl.addEventListener('touchend', (e) => {
-            if (appState.currentView !== 'game') return;
-            const diffX = e.changedTouches[0].screenX - touchStartX;
-            const diffY = e.changedTouches[0].screenY - touchStartY;
-
-            // 수평 스와이프 판정 (수직 스크롤 제외)
-            if (Math.abs(diffX) > 60 && Math.abs(diffY) < 50) {
-                if (diffX < 0) nextVerse(); // 왼쪽으로 스와이프 -> 다음
-                else prevVerse();           // 오른쪽으로 스와이프 -> 이전
-            }
-        }, { passive: true });
+        }
 
         /* ========================================================
            이벤트 리스너 바인딩 & 초기화
            ======================================================== */
         document.getElementById('btn-open-sidebar').onclick = openSidebar;
         document.getElementById('btn-go-home').onclick = () => showScreen('home');
+        document.getElementById('btn-share-app').onclick = shareApp;
         document.getElementById('btn-toggle-read').onclick = () => {
             if (appState.currentView === 'read') showScreen('home');
             else showScreen('read');
@@ -2859,5 +2850,4 @@
     </script>
 
 </body>
-
 </html>

@@ -1,5 +1,6 @@
 # 📖 로마서 8장 전장 암송 웹 애플리케이션 (Romans 8 Memorization)
 
+> 🌐 **공식 서비스 웹 주소**: [https://romanamsong.vercel.app/](https://romanamsong.vercel.app/)  
 > **"성경의 다이아몬드, 로마서 8장 39구절 완전 정복"**  
 > 생명의 성령의 법에서 끊을 수 없는 하나님의 사랑까지, 체계적인 단계별 암송과 음성 낭독(TTS), 맞춤형 복습을 제공하는 웹 애플리케이션입니다.
 
@@ -85,7 +86,7 @@ c:\로마서암송/
 3. 스마트폰 바탕화면에 앱 아이콘이 생성되어 단독 앱처럼 전체 화면으로 실행 가능
 
 ### 3. 웹 서버(출판) 배포 안내
-`index.html`이 준비되어 있어 파일 이름 변경 없이 그대로 업로드/배포할 수 있습니다:
+- **공식 Vercel 서비스**: [https://romanamsong.vercel.app/](https://romanamsong.vercel.app/)
 - **Dothome / Cafe24 / 일반 웹 호스팅**: FTP로 `html` 디렉토리에 `index.html` 업로드 즉시 서비스 개시
 - **GitHub Pages**: 저장소 생성 후 `index.html` 푸시 $\rightarrow$ Pages 활성화
 - **Vercel** / **Cloudflare Pages** / **Netlify**: 폴더를 드래그 앤 드롭하여 10초 만에 글로벌 무료 호스팅 완료
